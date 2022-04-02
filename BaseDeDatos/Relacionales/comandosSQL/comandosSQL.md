@@ -1,4 +1,5 @@
-#Tipos de sentencias
+# Tipos de sentencias
+
 Aqui se espcifica los tipos de comandos que existen en SQL
 
 ```
@@ -16,14 +17,16 @@ Aqui se espcifica los tipos de comandos que existen en SQL
 objetos: Bases de datos, tablas y campos.
 ```
 
-#Crear base de datos
+# Crear base de datos
+
 Comando para crear una base de datos en SQL.
 
 ```
 CREATE DATABASE "nombrebd";
 ```
 
-#Usar una base de datos
+# Usar una base de datos
+
 Acceder a una base de datos.
 
 ```
@@ -34,7 +37,8 @@ USE nombredb;
 Depende del entorno usado.
 ```
 
-#Crear una tabla
+# rear una tabla
+
 Comando para crear una tabla en SQL.
 
 ```
@@ -46,7 +50,8 @@ CREATE TABLE nombre_tabla (
 );
 ```
 
-#Tipos de datos
+# Tipos de datos
+
 Tipos de datos especificos que soporta el lenguaje SQL.
 
 ```
@@ -91,7 +96,8 @@ Other data types:
     -xml
 ```
 
-#Llaves primarias
+# Llaves primarias
+
 Comando que crea las llaves primarias en SQL, es decir, datos que es único en la tabla.
 
 ```
@@ -103,7 +109,8 @@ CREATE TABLE "nombre_tabla" (
 );
 ```
 
-#Insertar datos a una tabla con INSERT
+# Insertar datos a una tabla con INSERT
+
 Comando para agregar datos a una tabla en SQL.
 
 ```
@@ -115,7 +122,8 @@ INSERT INTO "nombre_tabla" VALUES (
 );
 ```
 
-#Obtener datos de una tabla con SELECT
+# Obtener datos de una tabla con SELECT
+
 Comando para agregar datos a una tabla en SQL.
 
 
@@ -126,7 +134,8 @@ Ejemplo:
 SELECT * FROM "Calificaciones";
 ```
 
-#Actualizar registros de una tabla
+# Actualizar registros de una tabla
+
 Comando para actualizar registros de una tabla en SQL.
 
 ```
@@ -135,14 +144,16 @@ UPDATE "nombre_tabla" SET campo = valor_nuevo WHRE campo = valor;
 Ejemplo:
 UPDATE "Calificaciones" SET calificacion = 6.5 WHERE idAlumno = 4;
 ```
-#Eliminar registros de una tabla
+# Eliminar registros de una tabla
+
 Comando para eliminar registros de una tabla en SQL.
 
 ```
 DELETE FROM "nombre_tabla" WHERE campo = valor;
 ```
 
-#Comentarios
+# Comentarios
+
 Comandos para agregar comentarios en SQL.
 
 ```
@@ -156,7 +167,8 @@ Bloque de comentarios
 */
 ```
 
-#Operadores
+# Operadores
+
 Tipos de operadores que soporta en lenguaje SQL.
 
 ```
@@ -176,7 +188,8 @@ Operador diferente que: SELECT campo1,campo2,campo3 FROM "nombre_tabla" WHERE li
 
 ```
 
-#Operador LIKE para coincidencias
+# Operador LIKE para coincidencias
+
 Comando para buscar coincidencias en una busqueda en SQL.
 
 ```
@@ -187,7 +200,8 @@ SELECT * FROM Calificaciones WHERE nombre LIKE '%R'; <--- Terminen con R
 SELECT * FROM Calificaciones WHERE nombre LIKE '%R%'; <--- Se encuentre la R
 ```
 
-#Valores nulos
+# Valores nulos
+
 Comando para datos nulos en SQL.
 
 ```
@@ -196,14 +210,16 @@ SELECT * FROM Calificaciones WHERE nombre IS NULL;
 SELECT * FROM Calificaciones WHERE nombre IS NOT NULL;
 ```
 
-#Comando DISTINCT
+# Comando DISTINCT
+
 Comando para no traer valores repetidos en SQL.
 
 ```
 SELECT DISCTINCT calificaciones From Calificaciones;
 ```
 
-#Operadores logicos
+# Operadores logicos
+
 Operadores logicos que soporta el lenguaje SQL.
 
 ```
@@ -212,14 +228,16 @@ SELECT * From Calificaciones WHERE nombre = 'Daniela' AND calificacion > 9 ;
 SELECT * From Calificaciones WHERE nombre = 'Daniela' OR calificacion > 9 ;
 ```
 
-#Comando NOT
+# Comando NOT
+ 
 Comando NOT para incluir negación en el lenguaje SQL.
 
 ```
 SELECT * FROM Calificaciones WHERE NOT nombre = "Daniela";
 ```
 
-#Comando BETWEEN
+# Comando BETWEEN
+
 Comando BETWEEN para buscar entre dos valores en lenguaje SQL.
 
 ```
@@ -227,7 +245,8 @@ SELECT * FROM Calificaciones WHERE calificacion BETWEEN 8 AND 10;
 
 ```
 
-#Comando ORDER BY
+# Comando ORDER BY
+
 Comando ORDER BY para ordenar de manera descendente o ascendente una busqueda en lenguaje SQL.
 
 ```
@@ -236,7 +255,8 @@ SELECT nombre_columnas FROM nombre_table ORDER BY nombre_columna ASC
 SELECT nombre_columnas FROM nombre_table ORDER BY nombre_columna DESC
 ```
 
-#Alias (AS)
+# Alias (AS)
+
 Comando para agregar un alias AS para simplificar busquedas en lenguaje SQL.
 
 ```
@@ -247,21 +267,24 @@ FROM nombre_tabla AS alias_tabla FROM nombre_tablas alias
 SELECT * FROM Calificaciones AS cal WHERE cal.campo;
 ```
 
-#Elimina todos los datos de Tablas
+# Elimina todos los datos de Tablas
+
 Comando para elminiar todos los registros de una tabla en lenguaje SQL.
 
 ```
 TRUNCATE TABLE empleado;
 ```
 
-#Eliminar una tablas
+# Eliminar una tablas
+
 Comando para elminiar una tabla en lenguaje SQL.
 
 ```
 DROP TABLE empleado;
 ```
 
-#Eliminar base de datos
+# Eliminar base de datos
+
 Comando para elminiar una base de datos en lenguaje SQL.
 
 ```
