@@ -95,3 +95,44 @@ SELECT * FROM "Empleado" AS E FULL JOIN "Departamentos" AS D ON E.DepartamentoID
 Estructura: 
 SELECT * FROM "tabla_1" AS alias_tabla1 FULL JOIN "tabla_2" AS alias_tabla2 ON alias_tabla1.columnaX = alias_tabla2.columnaY WHERE alias_tabla1.columnaX IS NULL or alias_tabla2.columnaY IS NULL;
 ```
+
+# Algebra relacional - UNION
+
+Unir tipos de datos que sean similares, las entidades tengan la misma cantidad de campos y en la sección deben estar en el mismo orden.
+```
+SELECT fullname, address FROM "nombre_schema"."nombre_tabla"
+UNION
+SELECT fullname, address FROM "nombre_schema"."nombre_tabla"
+```
+
+# Algebra relacional - PRODUCTO CARTESIANO
+
+Todos los datos de un conjunto A se relacionan con cada uno de los datos de la tabla B.
+
+```
+SELECT * FROM "nombre_schema"."nombre_tabla", "nombre_schema"."nombre_tabla";
+```
+
+# Algebra relacional - THETA SELECT
+
+Clausula ON que hacemos en los JOIN de las ocnsultas combinadas.
+
+```
+SELECT pe.correo, pe.nombre, pe.edad, pe.foto, pf.id_pelicula, pe.id_perfil, peli.restirccion_edad
+FROM "Grupo 3"."PERFIL" as pe
+INNER JOIN "Grupo 3"."PELICULA-FAVORITA" as pf
+ON pe.id_perfil = pf.id_perfil
+INNER JOIN "Grupo 3"."PELICULA" as peli
+ON pf.id_pelicula = peli.id_pelicula
+WHERE peli.restriccion_edad >= 13;
+```
+
+# Algebra relacional - PROJECTION
+
+La proyeccion es la relación que se obtiene al eliminar registros duplicados y columnas que no han sido especificadas en la sentencia.
+
+```
+SELECT DISTINCT correo FROM "Grupo 3"."PERFIL";
+```
+
+

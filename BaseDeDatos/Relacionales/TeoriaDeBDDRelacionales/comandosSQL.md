@@ -23,6 +23,60 @@ Comando para crear una base de datos en SQL.
 
 ```
 CREATE DATABASE "nombrebd";
+
+
+CREATE DATABE "nombrebd"
+WITH
+    ENCODING = 'UTF8'
+    OWNER = postgres
+    CONNECTION LIMIT = 100;
+
+```
+
+# Crear schema
+
+Crear un schema en SQL
+
+```
+CREATE SHCEMA nombre_schema;
+```
+
+# Definir esquema de trabajo
+
+Definir un schema en SQL
+
+```
+SET search_path TO nombre_schema, public;
+```
+
+# Dar privilegios a un usuario sobre un esquema
+
+Dar privilegios a un usuario
+
+```
+GRANT CREATE ON SCHEMA nombre_schema TO postgres;
+```
+
+# Crar roles
+
+Cerar roles en SQL
+
+```
+CREATE USER pepe WITH ENCRYPTED PASSWORD 'admin123';
+
+CREATE ROLE prueba
+SUPERUSER
+LOGIN
+PASSWORD 'admin123';
+```
+
+# Asignar permisos a los usuarios
+
+```
+GRANTA ALL
+ON ALL TABLES
+IN SCHEMA "public"
+TO prueba;
 ```
 
 # Usar una base de datos
@@ -37,7 +91,7 @@ USE nombredb;
 Depende del entorno usado.
 ```
 
-# rear una tabla
+# Crear una tabla
 
 Comando para crear una tabla en SQL.
 
@@ -48,6 +102,50 @@ CREATE TABLE nombre_tabla (
     dato tipo_dato(largo_del_dato),
     dato tipo_dato(largo_del_dato) <- Ojo, sin la coma 
 );
+```
+# Alterar tablas
+
+```
+Agregar columna:
+ALTER TABLE "Usuario" ADD COLUMN fecha_nacimiento DATE;
+
+Eliminar columnas:
+ALTER TABLE "Usuario" DROP COLUMNA edad;
+
+Renombrar columnas:
+ALTER TABLER "Usuario" RENAME COLUMN nombre_completo TO nombre;
+
+Agregar validaciones:
+ALTER TABLE "Usuario" ADD CHECK (edad >= 18);
+
+Añadir clave primaria:
+ALTER TABLE "Usuario" ADD PRIMARY KEY (id);
+
+Agregar llave foránea:
+ALTER TABLE "Usuario" ADD CONSTRAINT "fk_direccion" FOREIGN KEY (id_direccion) REFENCES "Direccion" (id);
+
+Cambiar nombre tabla:
+ALTER TABLE "Usuario" RENAME TO nuevo_usuario;
+```
+# Agregar constraint
+
+```
+UNIQUE
+CREATE UNIQUE INDEX CONCURRENTLY correo_unique
+ON "Usuario" (correo_electronic);
+
+ALTER TABLE "Usuario" ADD CONSTRAINT correo_unique_id UNIQUE USING INDEX correo_unique;
+
+
+NOT NULL
+ALTER TABLE "Usuairo"
+ALTER COLUMN correo_electronico SET NOT NULL;
+```
+# Actualizar un registro de la tabla
+
+```
+UPDATE "Usuario" SET correo_electronico = 'pepe@hotmail.com'
+WHERE id = 1;
 ```
 
 # Tipos de datos
