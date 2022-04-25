@@ -115,8 +115,8 @@ SELECT * FROM "nombre_schema"."nombre_tabla", "nombre_schema"."nombre_tabla";
 
 # Algebra relacional - THETA SELECT
 
-Clausula ON que hacemos en los JOIN de las ocnsultas combinadas.
-
+Clausula ON que hacemos en los JOIN de las consultas combinadas.
+'Para ser theta join es SELECT FROM ... INNER JOIN ... ON WHERE'
 ```
 SELECT pe.correo, pe.nombre, pe.edad, pe.foto, pf.id_pelicula, pe.id_perfil, peli.restirccion_edad
 FROM "Grupo 3"."PERFIL" as pe
@@ -135,4 +135,47 @@ La proyeccion es la relación que se obtiene al eliminar registros duplicados y 
 SELECT DISTINCT correo FROM "Grupo 3"."PERFIL";
 ```
 
+# UNION
 
+```
+SELECT columna1, columna2 FROM tabla1
+UNION
+SELECT columna1, columna2 FROM tabla2
+```
+
+# COUNT
+Permite contar un número especifico de registros
+```
+SELECT COUNT(*)
+FROM "Grupo 3".pelicula;
+```
+
+# MAX
+Trae el mayor
+```
+SELECT MAX (membercost) FROM cd.facilities;
+```
+
+# MIN
+Devuelve el valor minimo entre los registros de una tabla
+```
+SELECT MIN (membercost) FROM cd.facilities;
+```
+
+# SUM
+
+```
+SELECT SUM (membercost) FROM cd.facilities;
+```
+
+# AVG
+
+```
+SELECT AVG (membercost) FROM cd.facilities;
+```
+
+# ROUND
+Permite redondear los resultados
+```
+SELECT ROUND (membercost,3) FROM cd.facilities; <- Muestra 3 decimales>
+```
