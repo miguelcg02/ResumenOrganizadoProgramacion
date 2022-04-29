@@ -219,6 +219,18 @@ INSERT INTO "nombre_tabla" VALUES (
     dato4
 );
 ```
+# Restircciones de integridad
+
+```
+1. Clave primaria: "CONSTRAINT pk_id_usuario PRIMARY KEY (id_usuario)"
+2. Clave foranea: "CONSTRAINT fk_cedula FOREIGN KEY (cedula)"
+3. NOT NULL
+4. UNIQUE
+5. CHAECK ej: age int CHECK (age=>18)
+6. RESTRITC, no da permisos al update y al delete de modificar las relaciones (tablas dependientes). Ej: CONSTRAINT fk_cedula FOREIGN KEY (cedula) REFERENCES "USUARIO" (cedula) ON DELETE RESTRICT ON UPDATE RESTRICT
+7. CASACADE, si un registro es eliminado de la tabla principal, en la tabla dependientes también es eliminado, ocurre lo mismo con el update. Ej: CONSTRAINT fk_cedula FOREIGN KEY (cedula) REFERENCES "USUARIO" (cedula) ON DELETE CASCADE ON UPDATE CASCADE
+8. SET NULL, Permite eliminar filas de la tabla principal, poninendo en la tabla dependiente el valor de nulla para la llave foranea. Ej: CONSTRAINT fk_cedula FOREIGN KEY (cedula) REFERENCES "USUARIO" (cedula) ON DELETE RESTRICT ON DELETE SET NULL
+```
 
 # Obtener datos de una tabla con SELECT
 

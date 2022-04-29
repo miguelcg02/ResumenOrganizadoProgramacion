@@ -135,6 +135,13 @@ La proyeccion es la relación que se obtiene al eliminar registros duplicados y 
 SELECT DISTINCT correo FROM "Grupo 3"."PERFIL";
 ```
 
+# NATURAL JOIN
+Puede ser un INNER, LEFT o RIGHT JOIN. Remuve las columnas redundantes y se puede utilizar en entidades que han sido normalizadas previamente.
+
+```
+SELECT * FROM cd.facilities NATURAL JOIN cd.bookings;
+```
+
 # UNION
 
 ```

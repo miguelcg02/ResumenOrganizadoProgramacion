@@ -1,3 +1,17 @@
+# Arquitectura OLAP
+
+```
+Online Analytical Processing se enfoca en grandes cantidades de datos recopilando información de múltiples fuentes y luego guardando esos datos en almacenes. Se requieren grandes recursos computacionales dado la cantidad de datos y se bas en una estructura de columnas.
+
+OLAP Permite hacer reportes, análisis de datos y mineria de datos.
+
+Caracteristicas:
+1. Analizar datos en multiples dimensiones
+2. Calculos consistentes.
+3. Restricciones para proteger los datos.
+4. Curva de aprendizaje alta.
+```
+
 # Caracteristicas
 
 ```

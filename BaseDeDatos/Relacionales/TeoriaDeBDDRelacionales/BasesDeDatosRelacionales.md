@@ -1,3 +1,20 @@
+# Arquitectura OLTP
+
+```
+Un sistema Online Transaction Processing, se define como una herramienta que admite aplicaciones enfocadas en el procesamiento de consultas manteniendo la integridad de los datos que son accedidos múltiples veces y en la eficiencia, una medida que se toma del número de transacciones por segundo, además de la administración y procesamiento de la sbases de datos ofreciendo altos niveles de disponibilidad, seguridad y confiabilidad.
+
+Los OLTP son bases de datos orientadas al procesamiento de transacciones como las reservas áereas, supermercados de cadena, bancos, etc.
+
+Caracteristicas de los OLTP:
+1. Los datos son átomicos
+2. Los datos son los que se interactúan son actuales.
+3. Se procesa un registro a la vez.
+4. Permite ejecutar procesos repetitivos altamente estructurados.
+5. Tiene aplicaciones backend
+6. Se maneja con filas
+
+```
+
 # Base de datos relacionales
 
 ```
@@ -58,6 +75,23 @@ Dato que se crea en la tabla 1 como identificador unico.
 ```
 Dato que se crea en la tabla 2 como identificador de la tabla 1.
 ```
+# MATCH FULL
+FORMA: No peritará que una columna de una llave foranea de varia columna sea nula, a menos que todas las llaves sean nulas.
+
+# MATCH SIMPLE
+FORMA: Permite que cualquiera de las columnas de clave externa sean nulas
+
+# Constraints
+
+```
+1. Elementos no nulos
+2. Clave única
+3. Clave principal para identificar la tabla
+4. Clave foránea para relacionar tablas entre ellas
+5. Permisos y otras reglas aplicadas sobre las tablas
+6. Restircciones informativas
+```
+
 # Schemas
 
 ```
@@ -149,3 +183,4 @@ Dependencias funcionales: Son aquellos atributos que depende de la clave primari
 
 Dependencias transitivas: Un atributo no depende de la clave primaria pero su clave primaria se encuentra en la misma tabla.
 ```
+
