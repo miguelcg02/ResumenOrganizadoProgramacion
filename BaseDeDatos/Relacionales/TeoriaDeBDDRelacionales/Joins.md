@@ -140,6 +140,8 @@ Puede ser un INNER, LEFT o RIGHT JOIN. Remuve las columnas redundantes y se pued
 
 ```
 SELECT * FROM cd.facilities NATURAL JOIN cd.bookings;
+
+SELECT * FROM tabla1 JOIN tabla2 USING (atrComun);
 ```
 
 # UNION
@@ -185,4 +187,7 @@ SELECT AVG (membercost) FROM cd.facilities;
 Permite redondear los resultados
 ```
 SELECT ROUND (membercost,3) FROM cd.facilities; <- Muestra 3 decimales>
+
+ej util:
+SELECT ROUND(AVG(precio),2) Avg_precio FROM "Grupo 3 - T2"."PLANES" JOIN "Grupo 3 - T2"."SUSCRIPCIONES" USING (id_plan);
 ```

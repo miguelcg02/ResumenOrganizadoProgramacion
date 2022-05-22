@@ -49,5 +49,8 @@ Sistema distribuido que toca sacrificar uno, los tres no pueden estar al mismo t
 3, Modelo de docuemntos: Define la estructura de un documento en formato JSON.
 ```
 
-
+# Lambda 
+```
+Servicio de aws que hace como si fuera un backend, pero no siempre esta arriba (solo funciona si se activa)
+```
 

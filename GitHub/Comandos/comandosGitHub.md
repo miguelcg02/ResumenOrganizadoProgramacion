@@ -8,8 +8,6 @@
 5. Publicar la rama para que todos tengan acceso "git flow feature publish nombre_rama"
 ```
 
-
-
 # Otros comandos utiles
 
 ```
