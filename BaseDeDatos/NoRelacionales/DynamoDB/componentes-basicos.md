@@ -55,7 +55,7 @@ bonus: netstat -a muestra los puertos que estan ocupados
 
 ```
 
-# Estructura
+# Estructura KEY - VALUE
 
 ```
 {

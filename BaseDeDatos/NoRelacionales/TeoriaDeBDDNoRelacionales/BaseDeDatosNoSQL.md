@@ -49,8 +49,115 @@ Sistema distribuido que toca sacrificar uno, los tres no pueden estar al mismo t
 3, Modelo de docuemntos: Define la estructura de un documento en formato JSON.
 ```
 
+# Tipos
+
+```
+1. Bases de datos bajo modelos Key - value
+2. Bases de datos orientadas a documentos
+3. Bases de datos columnares
+4. Bases de datos orientadas a grafos
+```
+
 # Lambda 
 ```
 Servicio de aws que hace como si fuera un backend, pero no siempre esta arriba (solo funciona si se activa)
 ```
 
+# Cuando escoger este tipo de BdD
+
+```
+Cuando es necesario leer más datos que escribir (De lo contrario es mejor una SQL)
+```
+
+# Modelado der datos NoSql
+
+```
+1. Modelo relacional entre docs:
+ -Modelo uno a uno con documentos embebidos
+ -Modelo uno a mucho con documentos embebidos
+ -Modelo uno a muchos con documentos referenciados.
+
+2. Modelo de estructura en árbol
+ -Modleo de estructura de árbol con referencia de los padres
+ -Modelo de estructura de árbol con referencia de los hijos.
+ -Modelo de estructura de árbol con rutas materializadas
+ -Modelo de estructura de árbol con conjuntos anidados.
+```
+
+# 1. Modelo uno a uno con documentos embebidos
+
+```
+Para lograr uno a uno a nivel de documentos, se incrusta los datos que estén conectados entre si para reducir la cantidad de operaciones de lectura.
+
+ej: 
+{
+    _id: "Joe",
+    name: "Joe Mama",
+    address: {
+        street: "123 alv",
+        city: "Medayork",
+        state: "ANT",
+        zip: "12345"
+    }
+}
+```
+# 2. Modelos uno a muchos con documentos embebidos
+
+```
+Cinsiste en incrustar varios documentos que estan relacionados en uno solo, lo que facilitaría y reduciria las consultas
+
+ej:
+{
+    "_id": "Joe",
+    "name": "Joe Mama",
+    "adresses": [
+                {
+                    street: "123 alv",
+                    city: "Medayork",
+                    state: "ANT",
+                    zip: "12345"
+                },
+                {
+                    street: "135 Boston",
+                    city: "Bogotown",
+                    state: "CUM",
+                    zip: "12342"
+                }
+            ]
+}
+```
+
+# Patrón de subconjunti
+
+```
+El modelo por documentos embebidos tiene problemas y es que puede generar documentos de gran tamaño, ocasionalmente que el acceso a la información sea complejo y requiera de mucha lógica para obtener alguna cantidad de información.
+
+El patrón de subconjunto indica que s epuede limitar la cantidad de información, que tengo de uno a muchos solo con lo más relevante o lo que voy a ver en pantalla en primera instancia, luego a nivel detallado, se iría al documento de tener el resto de información complementaria.
+
+ej:
+
+{
+    name: "O'Reilley",
+    founded: 1980,
+    location: "CA",
+    books: [12345,67890,...]
+}
+
+{
+    _id: 12345,
+    title: "A",
+    author: ["Kristina"],
+    published_date: ISODate("2010-09-24"),
+    pages: 216,
+    language: "English"
+}
+
+{
+    _id: 67890,
+    title: "B",
+    author: ["Miguel"],
+    published_date: ISODate("2011-05-20"),
+    pages: 66,
+    language: "English"
+}
+```

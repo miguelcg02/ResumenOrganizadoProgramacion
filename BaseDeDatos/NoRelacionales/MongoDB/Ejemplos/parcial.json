@@ -1,0 +1,221 @@
+//Perfil
+{
+    "_id": Objectid(),
+    "correoUsuario": String,
+    "contraseña": String,
+    "edad" int,
+    "paginasUsuario": [<id_pagina1>,<id_pagina2>... ] 
+}
+
+//Pagina
+{
+    "_id": Objectid(),
+    "descripcion": String,
+    "fechaDeCreacion" String,
+    "autor": String,
+    "fechaInicio" new Date(),
+    "colaboradores": [<String 1>, <String2> ...],
+    "keyWords": [<String 1>, <String2> ...],
+    "menu": {
+        [
+            "encabezado" : {
+                "texto":{
+                    [
+                        "id_texto": int,
+                        "tipo_texto": String,
+                        "font": String,
+                        "size": float,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                    [
+                        "id_texto" int,
+                        "font": String,
+                        "size": float,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ]
+                },
+                "imagen":{
+                    [
+                        "id_imagen" int,
+                        "link": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                    [
+                        "id_imagen" int,
+                        "link": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ]
+                },
+                "contenedor":{
+                    [
+                        "id_contenedor" int,
+                        "tipo_contendor": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                }
+            },
+            "cuerpo":{
+                "texto":{
+                    [
+                        "id_texto": int,
+                        "tipo_texto": String,
+                        "font": String,
+                        "size": float,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                    [
+                        "id_texto" int,
+                        "font": String,
+                        "size": float,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ]
+                },
+                "imagen":{
+                    [
+                        "id_imagen" int,
+                        "link": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                    [
+                        "id_imagen" int,
+                        "link": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ]
+                },
+                "contenedor":{
+                    [
+                        "id_contenedor" int,
+                        "tipo_contendor": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                }
+            },
+            "pie_de_pagina": {
+                "texto":{
+                    [
+                        "id_texto": int,
+                        "tipo_texto": String,
+                        "font": String,
+                        "size": float,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                    [
+                        "id_texto" int,
+                        "font": String,
+                        "size": float,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ]
+                },
+                "imagen":{
+                    [
+                        "id_imagen" int,
+                        "link": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                    [
+                        "id_imagen" int,
+                        "link": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ]
+                },
+                "contenedor":{
+                    [
+                        "id_contenedor" int,
+                        "tipo_contendor": String,
+                        "color": String,
+                        "height": float,
+                        "width": String,
+                        "visibilidad": boolean,
+                        "colorFondo": String,
+                        "posicionX": float,
+                        "posicionY": float
+                    ],
+                }
+            }
+        ]
+    },
+}
