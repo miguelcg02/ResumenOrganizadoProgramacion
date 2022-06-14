@@ -1,0 +1,19 @@
+.color-red {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+[prueba="color-green"] {
+    color: green;
+}
+
+#id-h1-1 {
+    color: brown;
+}
+
+h1 {
+    color: gray !important;
+}

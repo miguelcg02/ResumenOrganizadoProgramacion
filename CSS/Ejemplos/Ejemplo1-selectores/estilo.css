@@ -1,0 +1,29 @@
+/* * {
+    color: red;
+} */
+
+h1 {
+    color: blue;
+}
+
+.titulo-h2 {
+    color: green;
+}
+
+#id-boton {
+    color: orange;
+}
+
+[rancio="siuu"]{
+    color:brown;
+}
+
+h3 p {
+    color:aqua;
+}
+
+p:hover {
+    color:coral;
+}
+
+
