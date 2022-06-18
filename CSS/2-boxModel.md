@@ -6,20 +6,28 @@ Linea o bloque
 display: inline;
 - No se les puede dar height ni width
 - El elemento genera un cuadro de elemento de bloque.
+- Usado generalmente para textos
 
 display: block;
 - Si se les puede dar height y width
 - El elemento genera uno o más cuadros de elemento en línea.
 
 display: inline-block;
-- El elemento genera una caja de elemento de bloque que fluye con el contenido circundante como si fuera una sola caja en línea (comportándose como un elemento reemplazado)
+- El elemento genera una caja de elemento de bloque que fluye con el contenido circundante como si fuera una sola caja en línea (comportándose como un elemento reemplazado) y se puede dimensionar las medidas de la caja
 
-ej:
+display: flex;
+-Se comporta como display block,  lo que esta adentro de la caja, no se comporta igual. Los hijos son los que se ven afectado
 
-h2 {
-    display: inline;
-}
+display: grid;
+-Se comporta como display block, lo que esta adentro de la caja, no se comporta igual. Los hijos son los que se ven afectado
+
+display: inline-flex;
+
+display: inline-grid;
+
+
 ```
+
 
 # Box Model
 
@@ -90,6 +98,7 @@ NOTA: Si paading tiene un solo valor, se le colaca ese valor a todos los lados.
 
 Distancia entre dos cajas
 
+ej 1: 
 Esta el margin top, right, bottom y left.
 
 ```
@@ -99,6 +108,7 @@ h2{
 
 
 ej 2:
+Este es el margin con cada propiedad en separado
 
 div {
   margin-top: 50px;
@@ -108,6 +118,13 @@ div {
 }
 
 NOTA: Si margin tiene un solo valor, se le colaca ese valor a todos los lados.
+
+ej 3:
+Este es un valor que se le pone para centrar la caja horizontalmente.
+
+margin: auto; 
+
+
 ```
 
 # Alineación de texto dentro de una caja
@@ -213,7 +230,7 @@ h1 {
 
 # Transform
 
-se aplican funciones sobre la caja, como rotar
+Se aplican funciones sobre la caja, como rotar
 
 ```
 ej:
@@ -223,4 +240,120 @@ h1 {
 }
 ```
 
-1:55h
+# Outline
+
+Propiedad que genera un borde, pero sin afectar a las demás cajas, no ocupa un espacio en el DOM
+
+```
+outline: 10px solid blue;
+
+Hay que tener en cuenta que seguira midiendo lo mismo por lo que un box-sizing no lo afectara, porque es como si no existiera. 
+```
+
+# Position
+
+Es como se afecta el orden donde se ponen los elementos, se afecta el flujo de html.
+
+```
+Hay 5 tipos de posicionamiento y hace que se obtengan 5 propiedades nuevas, top, left, right, bottom y el z index:
+
+(Top y left tienen prioridad)
+
+-z-index organiza en el eje z, y para poder organizarlo tienen que estar instanciados el poscionamiento, además un contenedor siempre estará por debajo de su hijo. A menos de que el contenedor no tenga z-index, y el hijo tenga un z-index = -1
+
+1. Static:
+Es el normal por edefecto, sigue el mismo flujo de html.
+
+position: static;
+
+
+2. Relative:
+
+position: relative;
+
+pero si se le pone tambien
+top: 20px;
+left 30px;
+z-index: 100;
+
+se movera 20px hacia abajo y 30px a la derecha
+
+El espacio de la caja se conserva pero se movera. Pero sigue manteniendo su espacio original con respecto a otras cajas y se mantiene su punto de referencia.
+
+3. Absolute:
+
+position: absolute;
+
+El espacio de la caja se pierde. Y su punto de referencia pasara a ser la pantalla como tal o el contenedor que lo tenga si este esta posicionado (El que sea) y se le pone top o left, o se mantendra en su lugar original si no se le pone. 
+
+Nota: Este es medio raro entonces hace ejemplos porque el punto de referencia puede variar si solo se instancia top y no left y viceversa.
+Nota 2: Aunque sea un elemento en bloque al poner absolute, la caja se autoajusta al contenido si no se le instancia width y height
+Nota 3: Para centrarlo poner top 0, left 0, right 0, bottom 0 y margin auto.
+
+4. Fixed:
+Exactamente igual que absolute, pero queda fijado. Toca tener en cuenta que como el espacio se pierde, la caja de abajo pasara a ese lugar y se tapara por la caja fixed.
+
+position: fixed;
+
+Para arreglar el problema de lo de las letras:
+
+body{
+  padding-top:100px;
+}
+
+.caja-fixed{
+  margin:-100px;
+}
+
+5. Sticky
+Combinacion entre relative y dixed, pero se puede determinar como y donde se queda fijo.
+
+position: sticky;
+
+y ojo acompañarlo de un:
+top: 0
+
+esto, para que se queda en esa posicion referenciando al viewport
+
+```
+
+# Overflow
+
+Es la barrita de navegación (Scroll), se le mete para lo que sobra en la caja y se cree la barra de navegación
+
+```
+- Visible
+Es la que esta por defecto, y es que el contenido que se sale de la caja, aún así sea visible
+
+overflow: visible;
+
+-auto
+Es el mejor, esconde el contenido y permite scrollear dentro de la caja sin que el contenido sobresalga solo cuando es necesario.
+
+overflow: auto;
+
+-scroll
+Siempre pone la barra de navegación y esconde lo que se sobresale.
+
+overflow: scroll;
+
+-hidden
+Hace que se desaprezca la barra
+
+overflow-y: hidden;
+```
+
+# float
+
+Hoy en día ya solo le queda un buen uso y es colocar imagenes con texto, en el que la imagen corra el texto a un lado.
+
+```
+REVISAR EJEMPLO 10
+```
+
+# Pseudo-Elementos
+
+```
+
+```
+

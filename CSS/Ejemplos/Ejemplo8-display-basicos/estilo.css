@@ -1,0 +1,32 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.caja-inline-block {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow;
+    display: inline-block;
+}
+
+.caja-inline {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background: blue;
+    display: inline;
+}
+
+.caja-block {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background: green;
+    display: block;
+}

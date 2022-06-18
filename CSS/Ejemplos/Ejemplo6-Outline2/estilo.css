@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    display: inline-block;
+}
+
+.caja1{
+    outline: 5px solid red;
+}

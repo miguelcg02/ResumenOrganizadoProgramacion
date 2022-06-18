@@ -1,0 +1,49 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.pruebas1 div {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.caja1{
+    background-color: red;
+}
+
+.caja2{
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.caja3{
+    background-color: blue;
+}
+
+.caja4{
+    background-color: yellow;
+}
+
+.contenedor{
+    background: blue;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+}
+
+.hijo{
+    background: orange;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: -1;
+    top: -20px;
+    left: -20px;
+}
+
