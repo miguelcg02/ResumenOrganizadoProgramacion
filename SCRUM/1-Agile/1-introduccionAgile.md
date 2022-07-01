@@ -48,7 +48,7 @@ y establece estas 5 fases:
 
 ```
 1. Cliente como actor fundamental. Así se va teniendo mejores ajustes y requisitos.
-    Stay holder: aquel que se queda viendo que si va sirviendo el producto.
+    Stakeholder: aquel que se queda viendo que si va sirviendo el producto.
 2. Acelera el tiempo de salida del producto. Se gana posicionamiento en relación de la competencia.
 3. Potenciacion en el retorno de inversión. Muchos proyectos se exeden en precios y costos.
 4. Alta respuesta al cambio, propieda de equipos colaborativos y no tan jerarquicos. Todo equipo debe tener alguien que pueda tomar decisiones rápidas sin necesidad de burocracia. 

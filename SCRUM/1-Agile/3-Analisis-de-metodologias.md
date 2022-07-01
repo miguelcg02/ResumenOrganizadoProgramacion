@@ -63,7 +63,7 @@ Los proyectos pueden tener muchas variaciones y están usualmente dados por las 
     -Investigación
 3. Rubros:
     -De ingeniería
-    -De cconstrucción
+    -De construcción
     -Gubernamentales
     -Energia
     -Medio ambiente
@@ -123,7 +123,7 @@ Aqui ya sabemos si se debe de plantear cara el proyecto con que tipo de metodolo
  -Primeros requisitos: Se acerca a un producto completado, menos incertidumbre, pero comienza un coste significativo.
  -Desarrollo inicial: Cada vez menos incertidumbre, más cerca del producto completado y un coste ya muy establecido.
  -Desarrollo avanzado: El mayor punto del coste, más cercano a comlpetar el proyecto y una incertidumbre casi nula. En este punto es cuando ya puede empezar a dar promesas, cuando puede terminar.
-4. Este cono puede ocurrir al contrario. Mayores costos al principio y menos al final. Vea la inversión de Disney al adquirir Fox.
+4. Este cono puede ocurrir al contrario. Mayores costos al principio y menos al final (incertidumbre igual). Vea la inversión de Disney al adquirir Fox.
 5. Lo ideal es que el coste se pueda mantener.
 ```
 

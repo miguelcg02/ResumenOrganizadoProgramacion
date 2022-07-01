@@ -43,7 +43,7 @@ Un product Owner debe estar pendiente del product backlog
 3. Ayude al cliente, sin necesidad de burocracia ineficiente.
 4. Proponer al cliente que trabajameos conjuntamente.
 5. Fomentar la capacidad de colaborar.
-6. Darle la bienvebida a los cambios.
+6. Darle la bienvenida a los cambios.
 ```
 
 # Cuarto valor
@@ -63,7 +63,7 @@ Un product Owner debe estar pendiente del product backlog
 ```
 1. La mayor prioridad es satisfacer al cliente mediante la entrega temprana y continuada de productos con valor con respecto a lo que necesita.
 2. Lo más importante para el cliente que se le resuelva la necesidad rápido.
-3. Se requieren ciclos iterativos/incrementales con feedbacks del Stakeholder, para sabr cómo trabajar.
+3. Se requieren ciclos iterativos/incrementales con feedbacks del Stakeholder, para saber cómo trabajar.
 4. La persona necesita un producto que entregue un valor.
 ```
 
@@ -79,7 +79,7 @@ Un product Owner debe estar pendiente del product backlog
 # Tercer principio
 
 ```
-1. Se entregan productos funcionales con frecuencia, entre dos semana y un mes, con preferencia por periodos de tiempo lo más corto.
+1. Se entregan productos funcionales con frecuencia, entre dos semana y un mes, con preferencia por periodos de tiempo lo más corto posibles.
 2. Se hace lo más corto posible de acuerdo al producto, debido a que se puede utilizar rápidamente en el mercado.
 3. Poder recibir feedback rápidamente.
 4. Procesos de colaboración permanente.
@@ -91,7 +91,7 @@ Un product Owner debe estar pendiente del product backlog
 1. Los responsables del negocio y los desarrolladores deben trabajar juntos de forma cotidiana durante todo el proyecto.
 2. Se debe trabajar de forma horizontal y unida.
 3. La jerarquia hace que los de arriba pierdan perspectiva.
-4. Se debe trabjar en conjunto.
+4. Se debe trabajar en conjunto.
 5. Se dialoga de manera abierta. Quite las barreras de la comunicación.
 6. Que el PO no sea una visita, que no deje el trabajo y se abra. Ver si necesita ayuda.
 7. Se acompaña a las personas para que se cumplan las metas
@@ -114,16 +114,16 @@ Un product Owner debe estar pendiente del product backlog
 # Sexto principio
 
 ```
-1. el método más eficiente y efectivo de comunicar información al equipo de desarrollo y entre sus miembros es la conversación cara a cara.
+1. El método más eficiente y efectivo de comunicar información al equipo de desarrollo y entre sus miembros es la conversación cara a cara.
 2. Mantenga o simule conversaciones fluidas.
-3. Evite formularios o emails, que entorpece procedimientos.
+3. Evite formularios o emails, que solo entorpecen procedimientos.
 4. Vía de comunicación franca, directa y honesta. No significa ser grosero.
 ```
 
 # Septimo principio
 
 ```
-1. el producto funcionando es la principal medida de progreso.
+1. El producto funcionando es la principal medida de progreso.
 2. El producto es lo único que resuelve el problema.
 3. Es muy probable que los clientes no tengan un conocimiento profundo de lo que esta pidiendo.
 4. No hable de cosas de la que el cliente no entienda.
@@ -132,7 +132,7 @@ Un product Owner debe estar pendiente del product backlog
 # Octavo principio
 
 ```
-1. Los procesos ágiles promueven el desarrollo sostenible. Los promotores, desarrolladores y usuarios debemos ser capacer de mantener un ritmo constante de forma indefinida. Trabajar no es el objetivo; alcanzar el producto es el objetivo.
+1. Los procesos ágiles promueven el desarrollo sostenible. Los promotores, desarrolladores y usuarios debemos ser capaces de mantener un ritmo constante de forma indefinida. Trabajar no es el objetivo; alcanzar el producto es el objetivo.
 2. Acelerar los tiempos crea estrés en el equipo y sobre carga all equipo.
 3. Si ingresa alguien al equipo se crea una perdida de tiempo al capacitarla. Entre más gente entre menos responsabilidad.
 4. La acumulación de tareas, hace que se pierda el feedback del cliente, porque no nos permite adaptarnos a la situación.

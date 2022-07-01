@@ -1,0 +1,72 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: blue;
+    transition: background 2s, height 1s, width 0.5s;
+    margin: 0px 20px;
+}
+
+.caja1:hover{
+    background: red;
+    height: 250px;
+    width: 250px;
+    
+}
+
+.caja2 {
+    width: 100px;
+    height: 50px;
+    background: yellow;
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+
+.caja2:link{
+    color: red;
+}
+
+.caja2:visited{
+    color: orange;
+}
+
+.caja3{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 0px 20px;
+}
+
+.caja3:active{
+    background: blue;
+}
+
+.caja4{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    margin: 0px 20px;
+}
+
+.caja4:focus{
+    background: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.caja5{
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin: 0px 20px;
+}
+
+.caja5 b:lang(es){
+    background-color: red;
+}

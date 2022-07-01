@@ -1,0 +1,31 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+div {
+    margin: 20px;
+    background: red;
+    width: 300px;
+    height: 500px;
+    /* display: flex; */
+}
+
+.caja .p1{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.caja .p2{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.caja .p3{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

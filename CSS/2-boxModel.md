@@ -66,6 +66,11 @@ height: 300px;
 
 -Ancho de la caja
 width: 300px;
+
+-Transiciones
+transition: width 1s, height1s, background1s, etc;
+
+Nota: va en la caja original no en el hover.
 ```
 
 # Padding
@@ -353,7 +358,152 @@ REVISAR EJEMPLO 10
 
 # Pseudo-Elementos
 
-```
+La mayoria no forman parte del DOM pero genera cambios visiuales, si requiere la etiqueta content no hace parte del DOM
 
 ```
+1. ::first-line | FUNCIONA EN TODOS MENOS EN INLINE
+-Edita la primera linea de todas dinamicamente, este si hace parte del DOM
+
+ej: 
+
+.editar-Primer-Linea::first-line{
+    color: blue;
+    font-size: 2em;
+}
+
+2 ::first-letter | FUNCIONA EN TODOS MENOS EN INLINE
+-Edita la primera letra de todas dinamicamente, este si hace parte del DOM
+
+ej: 
+
+.editar-Primera-Letra::first-letter{
+    color: red;
+    font-size: 3em;
+}
+
+3 ::placeholder | Se le tiene que poner de atributo a la caja al que se le quiera poner
+-Hace que aparezca unas caracterisitcas hasta que se edite por el usuario.
+
+<input type="text" placeholder="inserte su nombre aqui">
+
+input::placeholder{
+  color: red;
+}
+
+4. ::selection 
+-Sirve para cambiar el contenido seleccionado
+
+input::selection{
+  background: yellow;
+}
+
+5. ::before | Son hijos del elemento al que se aplica, necesitan CONTENT y son inline
+-Se agregan elementos inline antes del contenido que haya antes, si estaba solo "ayer" y en content le pongo "me dormí ", ahora aparecerá "me dormí ayer"
+
+ej:
+
+<b>a</b>
+
+b::before{
+    content: "Me suscribi ";
+}
+
+resultado: "Me suscribí a"
+
+```
+
+# Pseudo clases
+
+Es para escuchas de eventos
+
+```
+1. :hover | funciona en todos los elementos
+-Es cuando el mouse esta encima
+
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: blue;
+    transition: background 2s;
+}
+
+.caja1:hover{
+    background: red;
+    height: 250px;
+    width: 250px;
+}
+
+2. :link | funciona en elementos <a></A>
+-Cambia propiedades de un link que no ha sido visitado
+
+.caja2:link{
+    color: red;
+}
+
+3. :visited | funciona en elementos <a></A>
+-Cambia propiedades de un link visitado
+
+.caja2:visited{
+    color: orange;
+}
+
+4. :active | funciona en todos los elementos
+-El evento ocurre cuando se presiona el contenido
+
+.caja3:active{
+    background: blue;
+}
+
+5. :focus | Usualmente se aplica en inputs
+-El evento ocurre cuando el elemento esta seleccionado
+
+.caja4:focus{
+    background: blue;
+    width: 100px;
+    height: 100px;
+}
+
+6. :lang |funciona en todos los elementos
+-El evento ocurre al instanciar por atributo el lenguaje de este.
+
+.caja5 b:lang(es){
+    background-color: red;
+}
+
+```
+
+# Object fit
+
+Para trabajar con las medidas de la imagen y su resolución
+
+```
+-contain: Las resoluciones de la imagen se ajusten al contenido. Agrande las resoluciones
+
+object-fit: contain;
+
+-cover: La imagen se ajusta al contenedor y recorta si no cabe exacto.
+
+object-fit: cover;
+
+-scale-down: Se queda con la resolución más chica.
+
+object-fit: scale-down;
+
+-none: La proporcion de la imagen se mantiene, con las mimsas resoluciones.
+
+object-fit: none;
+
+Se activa la función object-position: (left,right,top,bottom) o con medidas en px, em, etc. Para posicionar el contenido de la imagen en el contenedor (Por ej cuando se usa cover)
+```
+
+# Cursor
+
+Para cambiar el estilo del cursor al estar dentro de una caja
+
+```
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+```
+
+
+
 
