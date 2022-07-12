@@ -18,6 +18,13 @@ propiedad: Cosa que se va a cambiar.
 valor: Cantidad de lo que se va a cambiar.
 ```
 
+# Font Awesome
+
+```
+Página para usar iconos: (OJO SOLO VERSION 5.15):
+https://fontawesome.com/v5/icons/home?s=solid
+```
+
 # Display block / display line
 
 ```
@@ -158,11 +165,13 @@ color: #000;
 
 background-color: #000;
 
+background: linear-gradient(to bottom, transparent, #222;  Se genera un efecto de acabado, donde se le da la dirección, el efecto (que puede ser transparente, o que venga desde otro color) y el color al que se llega.
+
 6. Tipo de letra
 
 font-family: Georgia, sans-serif;
 
-7. Aumento del tamño de la caja del texto
+7. Aumento del tamaño de la caja del texto
 
 line-height: 2;
 

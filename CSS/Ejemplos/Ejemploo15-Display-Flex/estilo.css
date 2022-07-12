@@ -1,0 +1,16 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px;
+    margin: 3px;
+}

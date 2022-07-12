@@ -16,7 +16,7 @@ display: inline-block;
 - El elemento genera una caja de elemento de bloque que fluye con el contenido circundante como si fuera una sola caja en línea (comportándose como un elemento reemplazado) y se puede dimensionar las medidas de la caja
 
 display: flex;
--Se comporta como display block,  lo que esta adentro de la caja, no se comporta igual. Los hijos son los que se ven afectado
+-Se comporta como display block,  lo que esta adentro de la caja, no se comporta igual. Los hijos son los que se ven afectado por las caracteristicas del contenedor flex y sus items flex
 
 display: grid;
 -Se comporta como display block, lo que esta adentro de la caja, no se comporta igual. Los hijos son los que se ven afectado
@@ -38,7 +38,7 @@ se modifica con el line-height
 -Padding: Separacion entre contenido y borde de la caja
 se modifica con el padding
 
--Border: El borde de la caj
+-Border: El borde de la caja
 se modifica con el border
 
 -Margin: La distancia entre dos cajas
@@ -51,7 +51,7 @@ Se modifica con el margin
 Para ver si se mantiene la deformación de la caja o no, con respecto al contenido de la caja
 
 ```
--Para que no se deforma la caja, si no que se ajuste con el contenido
+-Para que no se deforme la caja, si no que se ajuste con el contenido
 box-sizing: content-box;
 
 -Para que se mantenga la caja, sin importar la deformación.
@@ -68,9 +68,9 @@ height: 300px;
 width: 300px;
 
 -Transiciones
-transition: width 1s, height1s, background1s, etc;
+transition: width 1s, height 1s, background 1s, etc;
 
-Nota: va en la caja original no en el hover.
+Nota: va en la caja original no en el hover. OJO
 ```
 
 # Padding
@@ -264,7 +264,7 @@ Hay 5 tipos de posicionamiento y hace que se obtengan 5 propiedades nuevas, top,
 
 (Top y left tienen prioridad)
 
--z-index organiza en el eje z, y para poder organizarlo tienen que estar instanciados el poscionamiento, además un contenedor siempre estará por debajo de su hijo. A menos de que el contenedor no tenga z-index, y el hijo tenga un z-index = -1
+-z-index organiza en el eje z, y para poder organizarlo tienen que estar instanciados el posicionamiento, además un contenedor siempre estará por debajo de su hijo. A menos de que el contenedor no tenga z-index, y el hijo tenga un z-index = -1
 
 1. Static:
 Es el normal por edefecto, sigue el mismo flujo de html.
@@ -276,14 +276,14 @@ position: static;
 
 position: relative;
 
+El espacio de la caja se conserva pero se movera el contenido. Pero sigue manteniendo su espacio original con respecto a otras cajas y se mantiene su punto de referencia.
+
 pero si se le pone tambien
 top: 20px;
 left 30px;
 z-index: 100;
 
 se movera 20px hacia abajo y 30px a la derecha
-
-El espacio de la caja se conserva pero se movera. Pero sigue manteniendo su espacio original con respecto a otras cajas y se mantiene su punto de referencia.
 
 3. Absolute:
 
@@ -311,7 +311,7 @@ body{
 }
 
 5. Sticky
-Combinacion entre relative y dixed, pero se puede determinar como y donde se queda fijo.
+Combinacion entre relative y fixed, pero se puede determinar como y donde se queda fijo.
 
 position: sticky;
 
@@ -501,9 +501,8 @@ Se activa la función object-position: (left,right,top,bottom) o con medidas en 
 Para cambiar el estilo del cursor al estar dentro de una caja
 
 ```
+En el link se ven los diferentes tipos de cursor:
 https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
 ```
-
-
 
 

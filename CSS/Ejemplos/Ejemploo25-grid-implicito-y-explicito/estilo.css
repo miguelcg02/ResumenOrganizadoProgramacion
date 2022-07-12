@@ -1,0 +1,27 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 20px;
+}
+
+.grid-container{
+    background-color: #eee;
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: 150px 150px 150px;
+    grid-auto-flow: column;
+    /* grid-auto-rows: 10px; */
+    grid-auto-columns: 100px;
+}
+
+.grid-item {
+    background-color: #bbb;
+    border: 2px solid #000;
+    padding: 1px solid black;
+}

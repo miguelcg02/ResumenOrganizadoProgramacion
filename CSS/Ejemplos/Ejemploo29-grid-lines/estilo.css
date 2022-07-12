@@ -1,0 +1,28 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 20px;
+}
+
+.grid-container{
+    display: grid;
+    background-color: #eee;
+    border: 3px solid black;
+    grid-template-rows: [f-line] 150px [s-line] 150px [t-line] 150px [l-line];
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.grid-item {
+    border: 1px solid #000;
+}
+
+.grid-item:first-child{
+    background: red;
+    grid-row: f-line / t-line;
+    grid-column: 1 / 4;
+}

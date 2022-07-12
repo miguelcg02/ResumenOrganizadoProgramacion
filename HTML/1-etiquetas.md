@@ -183,7 +183,7 @@ Imagenes, videos, audios, ect.
 
 ```
 1. Imagen
-<img src="" title="Nombre" alt="image">
+<img src="imagen.png" title="Nombre" alt="image">
 
 2. Video
 <video src="video.mp4" controls="" alt="image"></video>

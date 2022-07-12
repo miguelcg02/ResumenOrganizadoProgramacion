@@ -13,7 +13,7 @@
 # Timeboxing
 
 ```
-1. El timeboxing e suna técninca para establecer la duración máxima de una reunión o una situación. Se respeta el tiempo, independiente de que se cumpla o no la agenda pautada.
+1. El timeboxing es una técninca para establecer la duración máxima de una reunión o una situación. Se respeta el tiempo, independiente de que se cumpla o no la agenda pautada.
 2. Priorice, quien tenga el problema más grande y urgente se debe atacar primero hasta que se resuelva,
 3. Tenga objetivos claros.
 4. No se interrumpe la reunión.
