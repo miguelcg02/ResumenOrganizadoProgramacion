@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+body {
+    background: radial-gradient(circle,#fff,#bbb); 
+}
+
+.div-responsive{
+    background: #c95;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .div-responsive{
+        background: red;
+    }
+}

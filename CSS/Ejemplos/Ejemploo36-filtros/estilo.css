@@ -1,0 +1,10 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+div{
+    filter: blur(10px) grayscale(50%);
+}
+

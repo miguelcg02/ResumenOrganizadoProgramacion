@@ -142,6 +142,26 @@ Relativas:
 
 ```
 
+# Variables var()
+
+Espacio almacenado en la memoria
+
+```
+:root {
+    --color-rojo: #f40;
+    --color-azul: #66f;
+}
+
+.container{
+    background: var(--color-rojo);
+}
+
+.container-2{
+    background: var(--color-azul);
+}
+
+```
+
 # Propiedades
 
 ```
@@ -182,4 +202,16 @@ font-weight: 900;
 9. Transaparencia
 
 opacity: 0.5;
+
+10. Espacio entre las letras
+
+letter-spacing: 5px;
+
+11. Direccion de las letras
+
+direction: ltr;
+
+12. Movimiento lento en el scroll. Se aplica en el contenedor
+
+scroll-bahaviour: smooth; 
 ```

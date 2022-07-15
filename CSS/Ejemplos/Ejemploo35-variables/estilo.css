@@ -1,0 +1,28 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+:root {
+    --color-rojo: #f40;
+    --color-azul: #66f;
+}
+
+div{
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+
+
+
+.container{
+    background: var(--color-rojo);
+}
+
+.container-2{
+    background: var(--color-azul);
+}
+

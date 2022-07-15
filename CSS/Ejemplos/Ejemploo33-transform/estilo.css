@@ -1,0 +1,28 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.container{
+    background: slateblue;
+    padding: 30px;
+}
+
+.caja{
+    background: red;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    
+}
+
+.caja:hover{
+    transform: scale(1.06) translateX(20px) skew(10deg);
+}
+
+b {
+    margin: auto;
+}
+

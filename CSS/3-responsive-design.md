@@ -20,3 +20,12 @@ ej:
     }
 }
 ```
+
+# Las 4 media query
+
+```
+1. All: Apto para todos los dispositivos
+2. print: Destinado a material impreso y visualización de docs en una pantalla en el mode de vista previa de impresión.
+3. Screen: Destina principal/ a las pantallas
+4. Speech: Destinado a sintetizadores de voz
+```

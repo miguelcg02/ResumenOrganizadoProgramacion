@@ -1,0 +1,46 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.container{
+    height: 100vh;
+    background: slateblue;
+    padding: 30px;
+}
+
+.caja{
+    background: red;
+    height: 100px;
+    width: 100px;
+    transition-property: background;
+    transition-duration: 3s;
+    /* transition-delay: 1s; */
+    margin: 30px;
+    border: 1px solid black;
+}
+
+.caja:hover{
+    background: lightgreen;
+}
+
+.caja:first-child{
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2){
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
