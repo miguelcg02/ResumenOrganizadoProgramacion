@@ -58,7 +58,7 @@ OJO: se coloca market porque así se llama el archivo, y se importa db porque es
 OJO: El id no es necesario ponerlo, se crea solito
 8. Agregar los items a la base de datos con la linea: db.session.add(item1)
 9. Confirmar la agregada: db.session.commit()
-10. Revisar si se agrego: item.query.all()
+10. Revisar si se agrego: Item.query.all()
 11. Agregar más datos
 12. Para salir con: exit()
 ```
@@ -113,4 +113,33 @@ def market_page():
     return render_template('market.html', items=items)
 ```
 
-1h 51min
+# Borrar toda la información de la base de datas (incluso tablas)
+
+```
+nombre_db.drop_all()
+```
+
+# Para crear todo de totazo
+
+```
+python
+
+from market.models import db
+
+db.create_all()
+
+from market.models import User,Item
+
+u1 = User(username='jsc', password_hash='123456', email_address='jsc@jsc.com')
+
+db.session.add(u1)
+
+db.session.commit()
+```
+
+# Para devolverse en las cagadas anteriores
+
+```
+nombre_db.session.rollback()
+```
+
