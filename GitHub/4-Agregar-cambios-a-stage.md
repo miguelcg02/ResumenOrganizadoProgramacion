@@ -48,3 +48,32 @@ Para quitar un archivo que esta en el commit rápido
 git rm archivo.txt
 ```
 
+devolver un archivo borrado que aparece en el git statud deleted
+
+```
+git restore --staged archivo1.txt
+```
+
+para restaurar lo borrado
+
+```
+git restore archivo1.txt
+```
+
+cambiar el nombre del archivo
+
+```
+mv archivo1.txt archiNuevoNombre.txt
+```
+
+cambiar el nombre con git
+
+```
+git add archivoNuevoNombre archivo1.txt
+```
+
+cambiar el archivo con git 2
+
+```
+git mv archivo1.txt archiNuevoNombre.txt
+```
