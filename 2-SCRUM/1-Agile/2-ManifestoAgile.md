@@ -6,14 +6,6 @@
 3. El proposito es sentar bases guia.
 ```
 
-# Mi primer product backlog
-
-```
-Es cómo un panel donde se registran tareas, donde ves de una manera visual, cómo gestionar tus progresos.
-
-Un product Owner debe estar pendiente del product backlog
-```
-
 # Primer valor
 
 ```
@@ -172,4 +164,12 @@ Un product Owner debe estar pendiente del product backlog
 1. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
 2. Cada cierto tiempo recibir feedback del stakeholder y juntarse con el equipo para mejorar los procesos.
 3. Existen técnicas de reflexión para mejorar ese rumbo y ser más efectivos como equipo.
+```
+
+# Mi primer product backlog
+
+```
+Es cómo un panel donde se registran tareas, donde ves de una manera visual, cómo gestionar tus progresos.
+
+Un product Owner debe estar pendiente del product backlog
 ```

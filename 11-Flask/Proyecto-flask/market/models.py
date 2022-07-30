@@ -1,4 +1,5 @@
 from market import db #Se imoprta la db creada en __init__
+from market import bcrypt
 
 class User(db.Model):
     id = db.Column(db.Integer(), primary_key=True) #Se instancia la columna con sus respectivos valores
@@ -7,6 +8,16 @@ class User(db.Model):
     password_hash = db.Column(db.String(length=60),nullable=False,unique=True) #COMO ES CONTRASEÑA TIENE QUE SER HASH PARA ENCRIPTARLO Y CON UN LENGTH MAYOR DE 60
     budget = db.Column(db.Integer(),nullable=False,default=1000) #Aqui se crea el saldo de cada persona y se le pone prederminado 1000
     items = db.relationship('Item', backref='owned_user', lazy=True) #Aqui se ponen los items que tiene esta persona al crear una relacion con la otra tabla, y se le asigna que ese producto únio es de esa persona
+
+    @property
+    def password(self):
+        return self.password
+
+    @password.setter
+    def password(self, plain_text_password):
+        self.password_hash = bcrypt.generate_password_hash(plain_text_password).decode('utf-8') #Esta encriptando
+        
+
 
     def __repr__(self): #Es una función especial para configurar el retorno de los elementos pedidos en la base de datos con la función nombre_clase.query.all()
         return f'User {self.username}'

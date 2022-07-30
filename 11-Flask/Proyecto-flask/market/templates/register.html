@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{% block title%}
+Register Page
+{%endblock%}
+
+{% block content %} 
+<body class="text-center">
+    <div class="container">
+        <form method="post" class="form-register" style="color:white"> <!-- El metodo post afecta la base de datos y se debe declarar el tipo de metodo  -->
+            {{ form.hidden_tag() }} <!-- Esta es una linea de protección contra el cross site reques forgery que es un ataque a la base de datos -->
+            <br>
+            <h1 class="h3 mb-3 font-wight-normal">
+                Please Create Your Account
+            </h1>
+            <br>
+            {{form.username.label()}} <!-- Esta poniendo el tag de username, se pone el label que le pusimos en el forms-->
+            {{form.username(class="form-control", placeholder="User name")}} <!-- Se crea el campo de username -->
+            
+            {{form.email_address.label()}} <!-- Esta poniendo el tag de username, se pone el label que le pusimos en el forms-->
+            {{form.email_address(class="form-control", placeholder="Email Address")}} <!-- Se crea el campo de username -->
+        
+            {{form.password1.label()}} <!-- Esta poniendo el tag de username, se pone el label que le pusimos en el forms-->
+            {{form.password1(class="form-control", placeholder="Password")}} <!-- Se crea el campo de username -->
+
+            {{form.password2.label()}} <!-- Esta poniendo el tag de username, se pone el label que le pusimos en el forms-->
+            {{form.password2(class="form-control", placeholder="Confirm Password")}} <!-- Se crea el campo de username -->
+
+            <br>
+            {{form.submit(class="btn btn-lg btn-block btn-primary")}} <!-- Se crea el campo de username -->
+
+            <br>
+            <div class="checkbox mb-3">
+                <h6>Already have an account?</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+{% endblock %}
