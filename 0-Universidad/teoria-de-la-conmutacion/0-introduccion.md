@@ -2,7 +2,6 @@
 
 - Construir un SAP-1 Computer
 
-
 - Seguimiento Clase (Montajes funcionado) 10%
 
 - Talleres 20%
@@ -17,12 +16,9 @@
 - Entrega parcial - Semana 16 10%
 - Entrega final 20%
 
-- Estudiar Transistores
-- Estudiar Compuertas logicas
 - Estudiar Latch set-reset
 - Estudiar Flip-flop SR
 - Estudiar Flip-flop JK
 - Estudiar Proteus
-
 
 - 8 días para entregar el taller

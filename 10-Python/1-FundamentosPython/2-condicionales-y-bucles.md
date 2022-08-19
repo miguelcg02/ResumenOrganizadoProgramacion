@@ -28,6 +28,28 @@ def SwitchExample(argument):
 
 # Bucles
 
+1. While
+
+```
+while i < len(lenguajes):
+    print(lenguajes[i])
+    i += 1
 ```
 
+2. for (itera sobre la lista)
+
+```
+lenguajes = ["Python", "C", "C++", "Java"]
+
+for l in lenguajes:
+    print(l)
+```
+
+l = primero muestra python, luego C, luego c++ y finalmente java
+
+3. for range
+
+```
+for i in range(1, 11):
+    print(i)
 ```

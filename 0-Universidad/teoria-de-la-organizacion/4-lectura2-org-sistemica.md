@@ -46,7 +46,7 @@
 
 # Naturaleza y cobertura de la teoría general de sistemas
 
-- La teoria general de sistemas intenta desarrollar un marco muy ampio aplicable a cualquier tipo de sistema. 
+- La teoria general de sistemas intenta desarrollar un marco muy amplio aplicable a cualquier tipo de sistema. 
 - Pedro Voltes: La ciencia actual, basándose en la concepción del sistema como un complejo de elementos interrelacionados, pretende hallar un conjunto de leyes que explique su comportamiento, funcionamiento y desarrollo.
 - Pedro voltes 2: La finalidad de la teoría general de sistemas consiste en encontrar el marco conceptual más general... dónde insertar una teoría ciencítifica o un problema técnico sin que éstos pierdan sus características escenciales.
 - Los objetivos de la teoría general de sistemas son: 1) Investigar el isomorfismo de los conceptos, leyes y modelos vigentes en varios campos y ayudar a transformarlos del uno al otro. 2) fomentar el desarrollo de modelos teóricos adecuados en campos que carezcan de ellos. 3) Reducir la duplicidad del esfuerzo teórico en diferentes campos. 4) Promover la unidad de la ciencia a través de la mejora de la comunicación entre los especialistas.
@@ -81,7 +81,7 @@ Cada uno de los subsistemas tiene su propia dinamica.
 8. Diferenciaciación: se aquiere progresivamente un caracter más especializado y diferenciado. "No existe organización sin diferenciación". Al crecer el sistema se especializa y diferencia.
 9. Equifinidad y tarea principal: Un sistema puede alcanzar el mismo estado final a partir de condiciones iniciales diferentes y por caminos diversos.
 Al hablarse de equifinalidad es pertinente señalar también que las organizaciones no tienen un objetivo único. Si bien se mueven hacia el logro d eun objetivo o tarea primordial, que determina sus estructuras y funcionamiento, esto coexiste con toda una gama de objetivos subsidiarios que pueden entrar en conflicto.
-10. El todo y la sinergia: Las organizaciones son más que la mera suma de sus partes componentes -> pPotencial de creación originado por la integración entre las partes.
+10. El todo y la sinergia: Las organizaciones son más que la mera suma de sus partes componentes -> Potencial de creación originado por la integración entre las partes.
 
 # La visión de la organización como sistema cerrado en la teoria organizacional
 
@@ -153,3 +153,4 @@ Al hablarse de equifinalidad es pertinente señalar también que las organizacio
 - El análisis de sistema, suminstran un marco en el que se encunetran las técnincas de investigación operacional y sus aplicaciones.
 - Sistemas -> Enfoque sistemico
 - sistematización -> Manejo electrónico de datos.
+

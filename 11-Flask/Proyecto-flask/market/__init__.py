@@ -11,5 +11,7 @@ app.config['SECRET_KEY'] = 'dd61707362225f8e6417f1fe' #Se agrega una secret key 
 db = SQLAlchemy(app) # Se instancia la base de datos que se va a utilizar
 bcrypt = Bcrypt(app) #Se instancia para crear los hash encriptados
 login_manager = LoginManager(app) # Se instancia la variable con la app
+login_manager. login_view = "login_page" #Le indica a la pagina que esa es la pestaña de login, es decir, si se va a meter a una pestaña que necesita inicio de sesión lo rebota primero a la pestaña de login en caso de no esta logeado
+login_manager.login_message_category ="info" #Se le coloca un mensaje automatico para que haga login
 
 from market import routes

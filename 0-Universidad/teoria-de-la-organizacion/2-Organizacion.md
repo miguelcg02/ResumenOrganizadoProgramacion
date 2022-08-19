@@ -1,4 +1,4 @@
-fdddddddddddddddddddddddddddddddddORGANIZACIÓN 
+ORGANIZACIÓN 
 
 Miguel Angel Calvache
 Juan Felipe Pinzón Trejo

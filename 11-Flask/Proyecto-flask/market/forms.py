@@ -31,6 +31,13 @@ class RegisterForm(FlaskForm): # Crea la clase para el forma de registro
     submit = SubmitField(label='Create Account') # Crea el boton de submit que agarra los datos del field
 
 class LoginForm(FlaskForm):
-    username = StringField(label='Email Address:', validators=[DataRequired()])
+    username = StringField(label='Username:', validators=[DataRequired()]) # Al igual que el register se hace de esta manera
     password = PasswordField(label='Password:', validators=[DataRequired()])
     submit = SubmitField(label='Sign in')
+
+
+class PurchaseItemForm(FlaskForm):
+    submit = SubmitField(label='Purchase item!')
+
+class SellItemForm(FlaskForm):
+    submit = SubmitField(label='Sell item!')

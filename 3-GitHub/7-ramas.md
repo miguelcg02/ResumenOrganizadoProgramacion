@@ -33,3 +33,9 @@ Para hacer el merge en la rama principal, nos ubicamos en esta rama principal
 ```
 git merge nombre_rama
 ```
+
+Para hacer un push en una rama especifica
+
+```
+git push –u origin development.
+```

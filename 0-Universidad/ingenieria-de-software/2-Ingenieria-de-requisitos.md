@@ -195,11 +195,96 @@ Analisis: Requisitos. Los requisitos tienen sus propios ciclos.
 
 # Clasificación de los requisitos
 
-- Requisitos a nivel de negocio: Por qué se debe realizar la solución. El goal.
+- Requisitos a nivel de negocio: Por qué se debe realizar la solución. El goal. 
 - Requisitos de los interesados: Lo que los usuarios necesitan hacer con la solución. Target group.
 - Requisitos del sistema: Lo que el equipo de dllo debe implementar. Salen de lols devs, sobre lo que no nos pidio el cliente.
 
+* De general a especificio
+* Suelen aparecer menos requisitos de negocio que de sistema. Es una piramide.
+* Los requisitos de negocio no se pueden implementar, el de los interesados puede que no se puedan implementar, pero si los del sistema.
+* Los que se implementan son los requisitos del sistema.
+
+# Requisitos del negocio
+
+* Negocio
+
+- Metas, objetivos de la organización
+- Representan beneficios tangibles para la organización.
+- Motivantes para que se implementen soluciones
+- No necesariamente están asociados a software
+
+* Ej: Tener más ventas, más inversión, más ganancias, suplir una necesidad como por ej que la gente los conozca.
+- Aumentar la cuota de mercado en la región X en Y % dentro de Z meses
+- Lograr X% de retorno sobre la inverisón Y en Z meses
+- Elevarar la satisfacción de los usuario en X%
+
+* Reglas del negocio
+
+- Politica corporativa, estándar de industria, norma, regulación de ley que define o limita algun aspecto del negocio.
+- No es un requisito de software en si mismo, pero es el origen de varios tipos de requisitos.
+- Las reglas de negocio afectan los procesos de negocio.
+- No se deben confundir con las restricciones técnicas. (Esta es de implementación)
+
+Ej:
+- Un solicitante de préstamo menor de 18 años debe tener un padre o tutor legal como co-firmante del préstamo.
+- En la historia clinica sólo se permite adicionar registros, pero nunca modificar ni borrar atenciones previas.
+- El indice de masa corporal se calcula: peso/(talla)^2
+
+# Requisitos de los interesados 
+
+* Stakeholders
+
+- Describen los objetivos o tareas que distintos usuarios deben ser capaces de realizar con el producto y producirán valor para alguien.
+- Están centrados en las necesidades y deseos de los interesados o usuarios, no en las capacidades que el software les ofrece.
+- Incluyen atributos o caracteristicas del producto.
+
+* Atributos de calidad (De aqui salen los requisitos no funcionales)
+
+- Son cualidades o propiedades de calidad que se deben satisfacer tales como: rendimiento, seguridad, disponibilidad, etc.
+- Se manifiestan de forma indeterminada o no medible por parte de los interesados.
+- Son el origen de requisitos no funcionales
+- Modelos de atributos de calidad: ISO 25010, FURPS, SEI
 
 
+# Requisitos del sistema
+
+* Requisitos funcionales:
+- Especifican los comportamientos observables que un sistema ofrece o exhibe bajo ciertas condiciones especificas.
+- Describen lo que los devs deben implementar para permitir a los usuarios realizar sus tareas
+- Se describen en la forma tradicional de "El sistema debe..."
+- Ej: El sistema debe permitir consultar...
+
+* Requisitos no funcionales o de calidad:
+- Describir un servicio o capacidad que el sistema debe proveer y que se asocian a atributos de calidad y resticciones de diseño e implementación.
+- Influyen en el diseño y arquitectura, incluso más que los requisitos funcionales.
+- Deben ser precisos, medibles y finitos.
+- Ej: el sistema tendrá una disponibilidad promedio de 97,7% considerando 1 día del añopara mantenimiento y reparación.
 
 
+* Ejemplos de requisitos de usuario:
+- Rendimiento
+- Compatibilidad
+- Usabilidad
+- Fiabilidad
+- Seguridad
+- Mantenibilidad
+- Portabilidad
+
+* Interfaces externas: Es una descripción de una conexión entre el sistema y un usuario, otro sistema, o un dispositivo de hardware.
+- Ej: El sistema deberá consultar en el CRM de la organización la información de clientes, el sistema deberá informar el ERP cuando se realice un nuevo pago.
+
+* Restricciones
+- Son limitaciones impuestas a las opciones disponibles para el dev ya sea para el diseño o para la implementación de solución.
+- Las restricciones pueden ser impuestas por interesados externas, por otros sistemas que interactuan con el que se está creando o por otras actividades del ciclo de vida de sus sistema.
+- Son de obligatorio cumplimiento (mandatarios)
+- Pueden ser de diseño, de arquitectura, de codificación, de pruebas.
+- Ej: los archivos enviados electrónicamente no pueden superar los 10 MB, el password debe ser encriptado por medio de algoritmo hash MD5, se determina el lenguaje que tiene que ser JAVA.
+
+# Metricas para especificar requisitos
+
+- Rapidez
+- Tamaño 
+- Facilidad de uso
+- Fiabilidad
+- Robustez: capacidad de aguantar los problemas.
+- Portabilidad: en cuantos sistemas puedo usar el sistema.

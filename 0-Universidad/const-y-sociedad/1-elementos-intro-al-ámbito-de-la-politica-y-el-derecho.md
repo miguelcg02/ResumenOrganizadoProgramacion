@@ -33,7 +33,7 @@ Exsiten 3 tipos de ligitimidad:
 
 Toda norma esta medida y construida por el lenguaje.
 
-1. Leyes de naturales
+1. Leyes de naturales iusnaturalismo
 - Son las que se aplican en las ciencas exactas. Se formula por vía inductiva (De lo particular a lo general).
 - Describen la naturaleza.
 - Son enunciados descriptivos.
@@ -41,33 +41,10 @@ Toda norma esta medida y construida por el lenguaje.
 - De ellas solo se puede predicar veracidad o falsedad.
 - El estudio del ser. A la ontologia. 
 
-2. Leyes de conducta humana
+2. Leyes de conducta humana iuspositivismo
 - Es formula por via deductiva (De lo general a lo particular). Se parte de principios, el criterio de optimización. 
 - La dignidad es un principio basico.
 - Son enunciados prescriptivo (Ponerle fin, limite a algo, también de dar orden, poner fecha). Algo ya prescribio.
 - Opera bajo el supuesto de la libertad. El libre albeldrio, actuar en consonancia de los principios.
 - De ellas se predica se son onligatorias o no obligatorias. Por ej en combate sobre la vida y quitarsela a otro ser humano
 - El deber ser. Que es obligatorio en un contexto determinado 
-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -7,9 +7,9 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <title>
-        {% block title%}
+        {% block title %}
 
-        {%endblock%}
+        {% endblock %}
       </title>
    </head>
    <body>
@@ -28,14 +28,30 @@
                       <a class="nav-link" href="{{ url_for('market_page') }}">Market</a>
                   </li>
               </ul>
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="{{ url_for('register_page') }}">Register</a>
-                  </li>
-              </ul>
+                {% if current_user.is_authenticated %} <!-- current_user.is_authenticated se obtiene de una funcion de la importacion de flask_login  -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: lawngreen; font-weight: bold">
+                            {{ current_user.prettier_budget }} $ <!-- Se le esta asignando que al useriao que esta logeado se le ponga el budget que tiene, pero usando una funcion pa que se vea mejor -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Welcome, {{ current_user.username }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('logout_page') }}">Logout</a>
+                    </li>
+                </ul>
+                {% else %}
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('register_page') }}">Register</a>
+                    </li>
+                </ul>
+                {% endif %}
             </div> 
         </nav>
 
@@ -49,7 +65,7 @@
                         {{ message }}
                     </div>
                 {% endfor %}
-            {%  endif % }
+            {%  endif %}
         {%endwith%}
             {% block content %}
 

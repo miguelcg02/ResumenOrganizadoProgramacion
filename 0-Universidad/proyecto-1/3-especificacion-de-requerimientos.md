@@ -173,7 +173,7 @@ a) El número de terminales que deben soportarse;
 b) El número de usuarios simultáneos que deben soportarse; 
 c) La cantidad y el tipo de información que debe manejarse. Los requisitos numéricos estáticos se identifican a veces en una sección separada titulada Capacidad. 
 
-Los requisitos numéricos dinámicos pueden incluir, por ejemplo, el número de transacciones y tareas y la cantidad de datos que deben procesarse en determinados periodos de tiempo, tanto en condiciones normales como en condiciones de carga de trabajo máxima. Los requisitos de rendimiento deben establecerse en términos mensurables. Por ejemplo, el 95 % de las transacciones deberá procesarse en menos de 1 segundo
+Los requisitos numéricos dinámicos pueden incluir, por ejemplo, el número de transacciones y tareas y la cantidad de datos que deben procesarse en determinados periodos de tiempo, tanto en condiciones normales como en condiciones de carga de trabajo máxima. Los requisitos de rendimiento deben establecerse en términos mensurables. Por ejemplo, el 95 % de las transacciones deberá procesarse en menos de 1 segundo.
 
 3.5 Logical database requirements: Especificar los requisitos lógicos de cualquier información que se vaya a colocar en una base de datos, incluyendo:
 
@@ -186,7 +186,7 @@ f) Requisitos de conservación de los datos
 
 3.6 Design constraints: Especificar las restricciones en el diseño del sistema impuestas por las normas externas, los requisitos reglamentarios o las limitaciones del proyecto
 
-3.7  Software system attributes: Especifique los requisitos derivados de las normas o reglamentos existentes, incluyendo:
+3.7 Software system attributes: Especifique los requisitos derivados de las normas o reglamentos existentes, incluyendo:
 
 a) Formato del informe;
 b) La denominación de los datos;

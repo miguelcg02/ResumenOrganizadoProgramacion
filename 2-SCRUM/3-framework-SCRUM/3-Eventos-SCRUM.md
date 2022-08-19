@@ -131,7 +131,7 @@ Scrum inc poker una aplicación que viene con el poker y de talles.
 7.Ingresa:
 -El incremento
 -El PB para comparar el trabajo realizado
-
+   
 8.Salen:
 - PB actualizado para el próximo Sprint.
 - Análisis de la velocidad

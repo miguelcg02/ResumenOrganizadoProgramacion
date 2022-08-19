@@ -24,7 +24,7 @@ Lo prioritario es lo de la IA y entrenarla
 
 # Weekly Meetings
 
-1. Waht work did you complete last week?
+1. Wath work did you complete last week?
 2. Are you facing any problem or issues?
 3. What have you plaaned this week?
 
