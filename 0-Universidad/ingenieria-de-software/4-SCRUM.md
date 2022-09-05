@@ -67,3 +67,41 @@ TOMAR SUS EMOCIONES - RECOMENDAR MUSICA - ESCUCHAR LAS CANCIONES - PODER CAMBIAR
 4. Estimar esfuerzo a cada historia de usuario
 
 EJ: https://www.digite.com/wp-content/uploads/2020/09/story-mapping-plan-1.png
+
+# Ceremonias
+
+1. Planning 2-4h
+2. Daliy 15min
+3. Backlog grooming 0.5-2h
+4. Review / Demo 2-4h
+5. Retrospective 1h
+
+# Tecnica pivote
+
+- Agarrar la HU más breve (facil de hacer) y definir el pivote.
+- Dependiendo del valor que genera cada HU, se le pone un valor.
+
+
+# Como hacer el retrospective
+
+- Técninca de las 4 Ls (Hacer un cuadrante):
+    - Liked: Cosas que realmente te han gustado.
+    - Learned: Cosas que has aprendido.
+    - Lacked: Cosas que el equipo ha hecho, pero que consideras que se pueden o deben mejorar.
+    - Longed for: cosas que te gustaríá o desearías que s ehubiera hecho.
+
+- Técnica del barco de vela:
+    - Ancla
+    - Viento
+
+- Técnica basketball:
+    - Shoot: What tasks do I complete?
+    - Assist: How do I help others?
+    - Pass: How do others help me?
+    - Position: What's my role in the team?
+
+- Tecnica de los tres cerditos:
+    - Paja: Cual es un riesgo latente?
+    - Palos: Que se puede mejorar?
+    - Ladrillo: Que se hizo bien?
+

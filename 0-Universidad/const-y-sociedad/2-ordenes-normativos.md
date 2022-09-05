@@ -17,7 +17,7 @@
 * Mecanismo de cumplimiento: Civilización, esto se basa desde la formación.
 * Cada criterio sobre lo correcto e incorrecto esta dado por una situación en la historia humana.
 * Omisión de socorro / negligencia: Pudiendo ayudar, no ayudaste.
-* Cuando la violencia se vuelve ilegal es fuerza.
+* Cuando la violencia se vuelve legal es fuerza.
 
 * Ninguna norma sea religiosa, social o juridica es neutral, siempre hay una ideologia detras.
 * El derecho la disciplina argumentativa. (Interpretando normas)
@@ -26,7 +26,7 @@
 
 1. Validez (A la existencia)
 a) Producida por un órgano competente. (Rama legislativa, consejo superior academico).
-b) A través de un procedimiento adecuado. (Para crear normas debe haber 4 debates, 2 en camara y 2 en senado. Se necesita Qurum necesario, se debe dejar hablar a la oposición)
+b) A través de un procedimiento adecuado. (Para crear normas debe haber 4 debates, 2 en camara y 2 en senado. Se necesita Quorum necesario, se debe dejar hablar a la oposición)
 c) No haber sido derogada por una norma posterior. (Que no puede tener normas anteriores que la invaliden)
 d) No puede estar en contradicción con las normas superiores a ella en el ordenamiento jurídico. (No puede estar en contradicción con una norma superior)
 

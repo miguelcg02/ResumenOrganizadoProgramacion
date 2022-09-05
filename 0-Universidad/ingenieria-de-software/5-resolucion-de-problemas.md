@@ -74,5 +74,3 @@ Existen:
 3. Mockup -> Color maqueta
 4. Prototipo -> Interactivo
 5. Software
-
-
