@@ -8,14 +8,17 @@ Espacio que guardamos en memoria
 
 * Casos especiales de datos: 
 -Undefined: Que no esta definida, se crea la variable pero no se le asigna valor.
--Null
--Nan
+-Null: Variable esta vacia, se tiene que declarar como vacia.
+-Nan: Not a number, cuando se realiza una operación con algo que no es un número.
 
 # Tipos de declaracion de variables
 
-- var: varibale que tiene alcance d etoda la pagina
+- var: varibale que tiene alcance de toda la pagina
 - let: limita el alcance de la variable al scope
-- const: es una costante, que no cambia y que se debe .
+- const: es una costante, que no cambia.
 
+# Pedir datos
 
-
+```
+let nombre = prompt("dime tu nombre);
+```

@@ -53,6 +53,106 @@ subsistema que contiene valores, normas, ideas básicas y un acercamiento a las 
 - El gran supuesto de esta concepción es que la cultura puede ser gestionada para construir una cultura fuertemente unificada y generar efectos positivos en la productividad.
 - frecuentemente buscan el consenso de toda la organización a través de un lenguaje común, valores compartidos, o un conjunto de comportamientos apropiados y acordados.
 
+* La cultura diferenciada
+- Los valores organizacionales no son compartidos en toda la organización, porque a menudo se caracteriza por el conflicto, en particular en relación a las subculturas, e incluso entre estas con la cultura dominante, pudiendo generar por momentos una cultura disidente o una contra cultura.
+- El objetivo está centrado en ver la diversidad, las incoherencias, la falta de consenso, y las fuentes de contenido cultural no centradas en el líder.
+
+* La cultura fragmentada
+- se caracteriza por buscar comprender aquello que forma parte de la cultura pero que se manifiesta como una falta de consistencia o como una manifestación ambigua.
+- Se considera que existe un estado de cambio en los valores, normas y significados que con frecuencia presentan una contradicción entre sí mismos, lo que hace difícil identificar una imagen coherente de la cultura o subcultura.
+
+- La autora distingue principalmente tres conceptualizaciones de cultura en las organizaciones: a) la administración comparativa o la cultura como una variable independiente, b) cultura corporativa o la cultura como una variable interna, y c) la cultura como una metáfora de base para conceptuar a la organización
+
+* cultura como una variable independiente
+-  La cultura se importa a la organización a través de sus miembros y se cree que su presencia se revela en los patrones de actitudes y las acciones.
+
+* cultura como una variable interna 
+- se caracteriza por vincular el éxito de los objetivos organizacionales con la creación de una cultura acorde a los requerimientos gerenciales.
+- “la constituye el cómo amoldar y conformar la cultura interna de maneras particulares, y cómo cambiar la cultura de modo congruente con los propósitos gerenciales”
+
+*  cultura como metáfora de raíz
+- concibe a la organización como una cultura. Se diferencia de los otros enfoques porque ve a la cultura como algo que la organización es, y no como algo que una organización tiene.
+
+- Para entender la cultura de una organización en sentido estricto se requiere de un grado de comprensión muy amplio, para lo cual los autores proponen tres conceptos de cultura: Hipercultura, Cultura Corporativa Experimentada y Cultura Organizacional Antropológica.
+
+*  Hipercultura 
+- Entiende la cultura a partir de descripciones breves ysuperficiales. Se compone de representaciones idealistas acerca de la cultura de la empresa, que por lo general tiene que ver con lo que manifiestan ciertos consultores y gerentes clave.
+- se hace referencia a una cultura formulada, cuya naturaleza se caracteriza por ser altamente empaquetada y tangible
+
+*  Cultura Corporativa Experimentada
+- se refiere a las experiencias de la cultura que poseen los miembros de la organización. Está representada por lo que los miembros tienden a pensar, sentir y prestar atención a la hora de contabilizar los valores y las prácticas asociadas con la cultura corporativa.
+-  Son ideas, valores y sentimientos que los miembros de la organización tienen acerca de la realidad cultural en la organización. Se compone, sucintamente, de lo que los miembros de la organización dicen que es la cultura.
+
+* Cultura Organizacional Antropológica
+- Se trata de un punto de vista sobre las organizaciones que va más allá de las ideas de los miembros de la misma organización, e involucra la actividad de quien está estudiando e investigando la cultura.
+
+# 3.3.Según el nivel de análisis organizacional
+
+- los autores divisan siete niveles de análisis, los cuales se pueden diferenciar a su vez en dos grupos: macro y micro. El primero, está comprendido por la Cultura Nacional, Regional e Industrial, y también por la Cultura Profesional. El segundo, comprende los niveles de Cultura Corporativa, Cultura Departamental o Funcional, y la Cultura Laboral o Social.
+- el primer nivel es el de cultura de la sociedad o nacional. 
+Se considera a la nación como un nivel natural de cultura a partir del cual se incluyen los 
+patrones históricos, religiosos y culturales en el análisis de las organizaciones
+- El nivel de cultura regional y local, se centra en estudiar las culturas dentro de un 
+determinado sector geográfico, administrativo, comercial, o étnico.
+- El nivel de cultura de la industria o del sector social, es considerado como una subcultura 
+dentro del enfoque macro. El foco de interés se sitúa en encontrar patrones comunes 
+entre las organizaciones que se encuentran en un mismo sector industrial o social.
+- El último dentro del enfoque macro es el nivel de cultura profesional. Su principal interés 
+radica en describir cómo piensan, actúan y funcionan ciertos grupos profesionales. En 
+este caso la organización es considerada como de interés secundario, por la sencilla 
+razón de que una profesión no se limita al marco de una organización determinada, sino 
+que va más allá de los límites de esta.
+- Dentro del enfoque micro, se encuentra el nivel de cultura organizacional o corporativa: 
+el foco de interés se centra en el estudio de la cultura de una organización como un todo, 
+y lo que se busca es describirla de manera individual y con base en sus características 
+culturales. Este enfoque busca principalmente caracterizar a la organización, pero 
+también comprender la identidad organizacional, su personalidad o su alma.
+
+# 4. A las cosas por su nombre: cultura corporativa vs cultura organizacional
+
+- las 
+organizaciones están conformadas, configuradas y dirigidas por seres humanos, y esto 
+concierne más una naturaleza compleja que una simple.
+- la cultura corporativa se caracteriza por tener un enfoque
+más funcional y un propósito instructivo, y como tal se basa en lo formal, explícito y textual 
+de la organización. En cambio, la cultura organizacional se caracteriza por poseer una 
+visión más comprensiva, haciendo énfasis en lo no visible, en los significados y lo 
+contextual.
+- se puede observar que más allá de las diferencias entre ambas 
+perspectivas, son las personas quienes configuran y re-configuran el entramado cultural 
+al interior de una organización. Éstas, en lugar de los procesos de socialización 
+autónomos, los ritos, las prácticas sociales, el macro-sistema social o las figuras claves, 
+son quienes crean significados y entendimientos.
+- la cultura solo puede ser 
+22
+comprendida a través del estudio de las personas como sujetos culturales, y esto requiere de una mirada comprensiva para poder entenderla en toda su 
+complejidad.
+
+# 4.1.Cultura Corporativa
+
+- El concepto de cultura corporativa es utilizado con frecuencia cuando se referencia a la 
+cultura en una perspectiva de gestión, o incluso cuando se trata a la empresa (u 
+organización), desde un contexto de negocio en particular. Por ello, en estos casos no se 
+debe hablar de la cultura de la empresa o de la organización, debido a que en sentido 
+estricto la empresa u organización no constituye el nivel de objeto de análisis, sino más 
+bien un cierto nivel de la organización: la dirección; o determinado sector de la industria
+-  La cultura es considerada como una 
+herramienta mediante la cual los administradores pueden influir en el curso de las 
+organizaciones
+- los líderes de grupos orientados al trabajo en equipo 
+recompensan mejor las contribuciones individuales que buscan mantener la armonía del 
+equipo, y para ello, se indica, deben mostrarse amables, respetuosos y sensibles a las 
+necesidades individuales.
+
+# 4.2.Cultura Organizacional
+
+- cultura organizacional es mejor utilizarla como un 
+concepto paraguas para referirse a una forma de pensar que tiene un serio interés en los 
+fenómenos culturales y simbólicos.
+- la cultura organizacional es el contexto en el cual toma sentido la acción, y para poder entenderla, hay que saber cómo aquellos que la conforman dan 
+sentido a las situaciones, a los acontecimientos, a la acción de aquellos con quienes se 
+encuentran, así como a la de ellos mismos
+
 
 
 

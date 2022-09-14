@@ -19,7 +19,7 @@
     5. Distribución de la autoridad
     6. Relacionamientos formales
 
-# 1. Delimitaciones conceptuales: estructura, configuraciones y formas  organizacionales
+# 1. Delimitaciones conceptuales: estructura, configuraciones y formas organizacionales
 
 - Estructura: distribución y orden de las partes que componen una entidad, bien sea ésta física o el resultado de un proceso del ingenio, como el arte y la historia.
 
