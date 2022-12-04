@@ -1,0 +1,93 @@
+on = 37 //in
+//outs
+BCgreen = 22
+BCyellow = 23
+BCred = 24
+BPgreen = 25
+BPred = 26
+
+// cada espera va mostrando el tiempo que falta para el cambio en el display
+
+if(on==HIGH){
+	BCred HIGH
+	BPgreen HIGH
+	//LOS DEMÁS EN LOW
+	espera 15s
+
+	POR 5 VECES{
+		BPgreen HIGH
+		espera 1/2 segundo
+		BPgreen LOW
+		espera 1/2 segundo
+	}
+
+	BPred HIGH
+	espera 2s
+	BCred LOW
+	BCgreen HIGH
+	espera 15s
+	POR 5 VECES{
+		BCgreen HIGH
+		espera 1/2 segundo
+		BCgreen LOW
+		espera 1/2 segundo
+	}
+	BCyellow HIGH
+	espera 2s
+}
+
+-----------------------------------------------------
+
+Pjug1
+Njug1=0
+Pjug2
+Njug2=0
+
+si (Pjug1==High y njug1==0){
+se genera numero random (1-9)
+se muestra en las unidades del display
+--esperamos a que pulse nuevamente--
+se genera numero random (1-9)
+se muestra en las decenas del display
+
+espera 1s
+
+guarda el número de 2 dígitos
+}
+
+si (jug2==High y njug2==0){
+se genera numero random (1-9)
+se muestra en las unidades del display
+--esperamos a que pulse nuevamente--
+se genera numero random (1-9)
+se muestra en las decenas del display
+
+espera 1s
+
+guarda el número de 2 dígitos
+}
+
+si(njug1!=0 y njug2!=0){
+	si(njug1>njug2){
+		POR 3 VECES{
+			mostramos J1
+			espera 1/2 segundo
+			apagamos
+			espera 1/2 segundo
+		}
+	}sino si(njug1<njug2){
+		POR 3 VECES{
+			mostramos J2
+			espera 1/2 segundo
+			apagamos
+			espera 1/2 segundo
+		}
+	}sino{
+		POR 3 VECES{
+			mostramos EE
+			espera 1/2 segundo
+			apagamos
+			espera 1/2 segundo
+		}
+	}
+}

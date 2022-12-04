@@ -68,9 +68,7 @@ pinMode(24, OUTPUT); //define pin 24 como salida
 pinMode(25, OUTPUT); //define pin 25 como salida
 pinMode(sw, INPUT); //define sw como entrada
 }
-10
-Teoría de la Conmutación
-11
+
 void loop() {
 if (digitalRead(sw) == HIGH) // Pregunta si SW esta encendido
 {

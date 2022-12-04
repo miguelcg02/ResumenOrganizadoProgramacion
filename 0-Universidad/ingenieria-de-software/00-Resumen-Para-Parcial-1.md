@@ -1,5 +1,6 @@
+# Diagramas
 
-https://app.diagrams.net/#G1JSVJDYDlRXGQHqfImKNCNx6iPvtpe2XO
+https://app.diagrams.net/#G1rS5xDpoYruZYjELSljC1wFJYDZf10zns
 
 # Modelos
 
@@ -233,6 +234,3 @@ de mensajes a lo largo del tiempo.
     * Diagrama de Comunicación
     * Diagrama Global de Interacción
     * Diagrama de Tiempos
-
-
-

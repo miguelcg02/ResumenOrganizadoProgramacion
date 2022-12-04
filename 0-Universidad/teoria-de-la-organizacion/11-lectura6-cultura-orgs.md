@@ -110,10 +110,9 @@ también comprender la identidad organizacional, su personalidad o su alma.
 
 # 4. A las cosas por su nombre: cultura corporativa vs cultura organizacional
 
-- las 
-organizaciones están conformadas, configuradas y dirigidas por seres humanos, y esto 
+- las organizaciones están conformadas, configuradas y dirigidas por seres humanos, y esto 
 concierne más una naturaleza compleja que una simple.
-- la cultura corporativa se caracteriza por tener un enfoque
+- la cultura corporativa se caracteriza por tener un enfoque 
 más funcional y un propósito instructivo, y como tal se basa en lo formal, explícito y textual 
 de la organización. En cambio, la cultura organizacional se caracteriza por poseer una 
 visión más comprensiva, haciendo énfasis en lo no visible, en los significados y lo 
@@ -123,10 +122,7 @@ perspectivas, son las personas quienes configuran y re-configuran el entramado c
 al interior de una organización. Éstas, en lugar de los procesos de socialización 
 autónomos, los ritos, las prácticas sociales, el macro-sistema social o las figuras claves, 
 son quienes crean significados y entendimientos.
-- la cultura solo puede ser 
-22
-comprendida a través del estudio de las personas como sujetos culturales, y esto requiere de una mirada comprensiva para poder entenderla en toda su 
-complejidad.
+- la cultura solo puede ser  comprendida a través del estudio de las personas como sujetos culturales, y esto requiere de una mirada comprensiva para poder entenderla en toda su complejidad.
 
 # 4.1.Cultura Corporativa
 

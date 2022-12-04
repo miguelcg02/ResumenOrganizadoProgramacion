@@ -54,3 +54,40 @@ Se suelen tener 4 o 5 cinco capas:
     - Django
     - MVT + Datos (Genera response)
 
+# Flujo de datos
+
+- Se usa cuandos e deben trabajar con muchos datos y se necesitan transformar de alguna manera especifica.
+
+- Hay dos tipos: 
+1. Tuberías y filtros
+    - Componentes (filtros) conectados (tubos)
+    - Los filtros alteran el contenido de manera independiente esperando un tipo de datos de forma especifica y entregandolo de una manera en especifico.
+    - Los tubos son los canales de conexión entre los componentes.
+    - No se recomiendo cuando se requiere interactividad.
+
+
+2. Procesamiento de lotes (Batch sequential)
+    - Modelo secuencial de procesamiento de datos.
+    - Es un paso a paso, hasta que no se dlle una ejecución en especifico no se puede pasar a la sgnte ejecución .
+    - Usado en transacciones bancarias.
+    - No proporciona interactividad.
+    - Ejemplo: tomar un conjunto grande de archivos y estructurarlos para un formato en especial para una consulta posterior.
+    - Que se procesen los datos durante las noches.
+
+# Arquitectura centrada en datos
+
+- En el centro hay un espacion de almacenamiento de datos.
+- Todos los procesos y funciones acceden al centro para revisar los datos.
+- Promueve la integralidad, es decir, que los componentes puedean ser cambiados con facilidad sin afectar los datos. 
+- API's
+- Para datos compartidos (De forma colaborativa).
+
+- Tipos:
+
+1. Repositorios
+    - En el centro hay un repositorio de datos (Como un archivo o base de datos)
+    - Los demás componentes acceden con frecuencia al repo de datos.
+
+2. Pizarron:
+    - Se envian notificaciones cada vez que haya un cambio en los cambios.
+    - Coordina la transferencia de info entre los cleintes 

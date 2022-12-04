@@ -3,7 +3,6 @@
 - Entre social y de creación humana
 - Creado intencionalmente
 - Orientado hacia unos objetivos
-- 
 
 # Estructura
 
@@ -26,7 +25,7 @@ Particularidades organizacionales:
     Verticla: Especifica. En cada sede se vende un producto en especifico
     Horizontal: En todos los sitios se vende lo mismo o casi exactamente lo mismo.
 
-3. Formualización
+3. Formalización
 
 - Todos los elementos para dllar la función dentro del trabajo. Que, cuando, cómo y en cuanto tiempo?
 - Maxima: Entre más grande la empresa más formal.
