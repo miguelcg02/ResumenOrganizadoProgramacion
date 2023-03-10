@@ -1,0 +1,1 @@
+# Tiempo de respuesta y vleocidad de carga

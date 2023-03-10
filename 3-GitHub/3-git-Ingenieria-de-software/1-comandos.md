@@ -74,7 +74,7 @@ git diff version_archivo1 versio_archivo2
 git log
 ```
 
-checkout:camibar entre ramas y revisar una información
+checkout: camibar entre ramas y revisar una información
 merge: combinar cambios
 
 # Estados
