@@ -1,0 +1,1 @@
+control + enter, manda las cosas

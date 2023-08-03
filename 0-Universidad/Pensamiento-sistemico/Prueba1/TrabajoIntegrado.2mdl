@@ -1,0 +1,198 @@
+{UTF-8}
+B1  = A FUNCTION OF( )
+	~	
+	~		|
+
+"B1: Fortaleciendo las universidades"  = A FUNCTION OF( )
+	~	
+	~		|
+
+B2  = A FUNCTION OF( )
+	~	
+	~		|
+
+"B2: Facilitando economicamente el estudio"  = A FUNCTION OF( )
+	~	
+	~		|
+
+Calidad de educacion universitaria  = A FUNCTION OF( Exigencia academica,Financiamiento publico en educacion\
+		)
+	~	
+	~		|
+
+Desercion estudiantil  = A FUNCTION OF( Estrategias de retencion,Necesidades economicas\
+		,Oportunidades para estudiar)
+	~	
+	~		|
+
+Estrategias de retencion  = A FUNCTION OF( Calidad de educacion universitaria)
+	~	
+	~		|
+
+Estrato socioeconomico  = A FUNCTION OF( Ingresos familiares)
+	~	
+	~		|
+
+Exigencia academica  = A FUNCTION OF( Tiempo dedicado a estudiar)
+	~	
+	~		|
+
+Financiamiento publico en educacion  = A FUNCTION OF( Desercion estudiantil)
+	~	
+	~		|
+
+Ingresos familiares  = A FUNCTION OF( Desercion estudiantil)
+	~	
+	~		|
+
+Necesidades economicas  = A FUNCTION OF( Estrato socioeconomico)
+	~	
+	~		|
+
+Oportunidades para estudiar  = A FUNCTION OF( Estrato socioeconomico,Financiamiento publico en educacion\
+		)
+	~	
+	~		|
+
+R1  = A FUNCTION OF( )
+	~	
+	~		|
+
+"R1: Repercusiones a largo plazo de desertar"  = A FUNCTION OF( )
+	~	
+	~		|
+
+R2  = A FUNCTION OF( )
+	~	
+	~		|
+
+"R2: No hay tiempo para la universidad"  = A FUNCTION OF( )
+	~	
+	~		|
+
+R3  = A FUNCTION OF( )
+	~	
+	~		|
+
+"R3: Aprovechando el tiempo"  = A FUNCTION OF( )
+	~	
+	~		|
+
+R4  = A FUNCTION OF( )
+	~	
+	~		|
+
+"R4: Problemas para volver a ingresar al sistema educativo"  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tiempo dedicado a estudiar  = A FUNCTION OF( Tiempo dedicado a trabajar)
+	~	
+	~		|
+
+Tiempo dedicado a trabajar  = A FUNCTION OF( Necesidades economicas,Tiempo dedicado a estudiar\
+		)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,62,0
+10,1,Estrategias de retencion,-568,432,58,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Desercion estudiantil,-356,408,53,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Exigencia academica,-630,146,53,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Estrato socioeconomico,247,364,67,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Oportunidades para estudiar,-39,789,62,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,Financiamiento publico en educacion,-434,769,67,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Calidad de educacion universitaria,-682,337,62,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,Ingresos familiares,-52,499,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,Tiempo dedicado a trabajar,-208,69,49,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,10,Tiempo dedicado a estudiar,-451,71,49,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,Necesidades economicas,-44,258,58,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,5,2,1,0,45,0,0,192,0,-1--1--1,,1|(-309,626)|
+1,13,11,2,1,0,43,0,0,192,0,-1--1--1,,1|(-251,290)|
+1,14,4,5,1,0,43,0,0,192,0,-1--1--1,,1|(231,620)|
+1,15,4,11,1,0,45,0,0,192,0,-1--1--1,,1|(136,275)|
+1,16,2,8,1,0,45,0,0,193,0,-1--1--1,,1|(-200,502)|
+1,17,8,4,1,0,43,0,0,192,0,-1--1--1,,1|(132,471)|
+1,18,11,9,1,0,43,0,0,192,0,-1--1--1,,1|(-85,146)|
+1,19,9,10,1,0,45,0,0,192,0,-1--1--1,,1|(-364,13)|
+1,20,10,9,1,0,45,0,0,192,0,-1--1--1,,1|(-372,117)|
+1,21,2,6,1,0,43,0,0,192,0,-1--1--1,,1|(-486,585)|
+1,22,6,5,1,0,43,0,0,192,0,-1--1--1,,1|(-235,844)|
+1,23,10,3,1,0,43,0,0,192,0,-1--1--1,,1|(-553,87)|
+1,24,1,2,1,0,45,0,0,192,0,-1--1--1,,1|(-471,441)|
+1,25,3,7,1,0,43,0,0,192,0,-1--1--1,,1|(-675,203)|
+1,26,7,1,1,0,43,0,0,192,0,-1--1--1,,1|(-639,393)|
+1,27,6,7,1,0,43,0,0,192,0,-1--1--1,,1|(-694,611)|
+10,28,R1,-58,375,43,43,5,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,R2,-456,232,43,43,5,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,30,R3,-333,68,43,43,5,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,31,R4,-57,639,43,43,4,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,32,B1,-581,552,43,43,4,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,33,B2,-375,668,43,43,5,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,34,"R1: Repercusiones a largo plazo de desertar",696,120,249,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,35,"R3: Aprovechando el tiempo",679,242,131,19,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,36,"R4: Problemas para volver a ingresar al sistema educativo",667,299,187,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,37,"B1: Fortaleciendo las universidades",670,357,173,24,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,38,"B2: Facilitando economicamente el estudio",708,429,239,36,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,39,"R2: No hay tiempo para la universidad",660,182,209,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+///---\\\
+:L<%^E!@
+5:"R4: Problemas para volver a ingresar al sistema educativo"
+19:62,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

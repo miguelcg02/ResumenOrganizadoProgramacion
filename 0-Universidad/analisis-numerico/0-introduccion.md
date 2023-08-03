@@ -11,4 +11,3 @@ Qz: (25%)
 6 qzs
 
 Practica final: (30%)
-

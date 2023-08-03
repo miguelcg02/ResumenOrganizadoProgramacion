@@ -1,0 +1,569 @@
+{UTF-8}
+********************************************************
+	.
+********************************************************~
+		<?xml version="1.0" encoding="UTF-8"?>
+		<richtext version="1.0.0.0" xmlns="http://www.wxwidgets.org">
+		  <paragraphlayout textcolor="#000000" fontpointsize="9" fontfamily="70" \
+		fontstyle="90" fontweight="400" fontunderlined="0" fontface="Segoe UI" \
+		alignment="1" parspacingafter="10" parspacingbefore="0" linespacing="10" \
+		margin-left="5,4098" margin-right="5,4098" margin-top="5,4098" \
+		margin-bottom="5,4098">
+		    <paragraph>
+		      <text></text>
+		    </paragraph>
+		  </paragraphlayout>
+		</richtext>
+	|
+
+Cupos cuarto año=
+	15
+	~	Estudiantes
+	~		|
+
+Cupos primer año=
+	500
+	~	Estudiantes
+	~		|
+
+Cupos quinto año=
+	15
+	~	Estudiantes
+	~		|
+
+Cupos segundo año=
+	15
+	~	Estudiantes
+	~		|
+
+Cupos tercer año=
+	15
+	~	Estudiantes
+	~		|
+
+Desertores cuarto año=
+	Estudiantes de cuarto año*Tasa de estudiantes desertores cuarto año
+	~	Estudiantes/Year
+	~		|
+
+Desertores primer año=
+	Estudiantes de primer año*Tasa de estudiantes desertores primer año
+	~	Estudiantes/Year
+	~		|
+
+Desertores quinto año=
+	Estudiantes de quinto año*Tasa de estudiantes desertores quinto año
+	~	Estudiantes/Year
+	~		|
+
+Desertores segundo año=
+	Estudiantes de segundo año*Tasa de estudiantes desertores segundo año
+	~	Estudiantes/Year
+	~		|
+
+Desertores tercer año=
+	Estudiantes de tercer año*Tasa de estudiantes desertores tercer año
+	~	Estudiantes/Year
+	~		|
+
+Estudiantes de cuarto año= INTEG (
+	Estudiantes nuevos cuarto año+"Tasa de transicion cohorte años 3-4"-Desertores cuarto año\
+		-"Tasa de transicion cohorte años 4-5 0",
+		0)
+	~	Estuadiantes
+	~		|
+
+Estudiantes de primer año= INTEG (
+	Estudiantes nuevos primer año-Desertores primer año-"Tasa de transicion cohorte años 1-2"\
+		,
+		500)
+	~	Estuadiantes
+	~		|
+
+Estudiantes de quinto año= INTEG (
+	Estudiantes nuevos tercer año 0 0+"Tasa de transicion cohorte años 4-5 0"-Desertores quinto año\
+		-"Tasa de transicion cohorte años 5-graduacion",
+		0)
+	~	Estuadiantes
+	~		|
+
+Estudiantes de segundo año= INTEG (
+	Estudiantes nuevos segundo año+"Tasa de transicion cohorte años 1-2"-Desertores segundo año\
+		-"Tasa de transicion cohorte años 2-3",
+		0)
+	~	Estuadiantes
+	~		|
+
+Estudiantes de tercer año= INTEG (
+	Estudiantes nuevos tercer año+"Tasa de transicion cohorte años 2-3"-Desertores tercer año\
+		-"Tasa de transicion cohorte años 3-4",
+		0)
+	~	Estuadiantes
+	~		|
+
+Estudiantes nuevos cuarto año=
+	Tasa de estudiantes que entran cuarto año*Cupos cuarto año
+	~	Estudiantes/Year
+	~		|
+
+Estudiantes nuevos primer año=
+	Tasa de estudiantes que entran primer año*Cupos primer año
+	~	Estudiantes/Year
+	~		|
+
+Estudiantes nuevos segundo año=
+	Tasa de estudiantes que entran segundo año*Cupos segundo año
+	~	Estudiantes/Year
+	~		|
+
+Estudiantes nuevos tercer año=
+	Tasa de estudiantes que entran tercer año*Cupos tercer año
+	~	Estudiantes/Year
+	~		|
+
+Estudiantes nuevos tercer año 0 0=
+	Tasa de estudiantes que entran quinto año*Cupos quinto año
+	~	Estudiantes/Year
+	~		|
+
+Tasa de desertores por situacion economica cuarto año=
+	30/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situacion economica primer año=
+	30/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situacion economica quinto año=
+	30/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situacion economica segundo año=
+	30/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situacion economica tercer año=
+	30/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situaciones personales cuarto año=
+	15/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situaciones personales primer año=
+	15/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situaciones personales quinto año=
+	15/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situaciones personales segundo año=
+	15/100
+	~	1/Year
+	~		|
+
+Tasa de desertores por situaciones personales tercer año=
+	15/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes desertores cuarto año=
+	Tasa de estudiantes que no reciben ayudas economicas cuarto año+Tasa de desertores por situaciones personales cuarto año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes desertores primer año=
+	Tasa de estudiantes que no reciben ayudas economicas primer año+Tasa de desertores por situaciones personales primer año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes desertores quinto año=
+	Tasa de estudiantes que no reciben ayudas economicas quinto año+Tasa de desertores por situaciones personales quinto año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes desertores segundo año=
+	Tasa de estudiantes que no reciben ayudas economicas segundo año+Tasa de desertores por situaciones personales segundo año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes desertores tercer año=
+	Tasa de estudiantes que no reciben ayudas economicas tercer año+Tasa de desertores por situaciones personales tercer año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que entran cuarto año=
+	100/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que entran primer año=
+	100/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que entran quinto año=
+	100/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que entran segundo año=
+	100/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que entran tercer año=
+	100/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que no reciben ayudas economicas cuarto año=
+	Tasa de desertores por situacion economica cuarto año-Tasa de estudiantes que reciben ayudas economicas cuarto año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que no reciben ayudas economicas primer año=
+	Tasa de desertores por situacion economica primer año-Tasa de estudiantes que reciben ayudas economicas primer año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que no reciben ayudas economicas quinto año=
+	Tasa de desertores por situacion economica quinto año-Tasa de estudiantes que reciben ayudas economicas quinto año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que no reciben ayudas economicas segundo año=
+	Tasa de desertores por situacion economica segundo año-Tasa de estudiantes que reciben ayudas economicas segundo año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que no reciben ayudas economicas tercer año=
+	Tasa de desertores por situacion economica tercer año-Tasa de estudiantes que reciben ayudas economicas tercer año
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que reciben ayudas economicas cuarto año=
+	5/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que reciben ayudas economicas primer año=
+	5/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que reciben ayudas economicas quinto año=
+	5/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que reciben ayudas economicas segundo año=
+	5/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes que reciben ayudas economicas tercer año=
+	5/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes repitentes cuarto año=
+	25/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes repitentes primer año=
+	25/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes repitentes quinto año=
+	25/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes repitentes segundo año=
+	25/100
+	~	1/Year
+	~		|
+
+Tasa de estudiantes repitentes tercer año=
+	25/100
+	~	1/Year
+	~		|
+
+"Tasa de transicion cohorte años 1-2"=
+	(1-Tasa de estudiantes desertores primer año-Tasa de estudiantes repitentes primer año\
+		)*Estudiantes de primer año
+	~	Estudiantes/Year
+	~		|
+
+"Tasa de transicion cohorte años 2-3"=
+	(1-Tasa de estudiantes desertores segundo año-Tasa de estudiantes repitentes segundo año\
+		)*Estudiantes de segundo año
+	~	Estudiantes/Year
+	~		|
+
+"Tasa de transicion cohorte años 3-4"=
+	(1-Tasa de estudiantes desertores tercer año-Tasa de estudiantes repitentes tercer año\
+		)*Estudiantes de tercer año
+	~	Estudiantes/Year
+	~		|
+
+"Tasa de transicion cohorte años 4-5 0"=
+	(1-Tasa de estudiantes desertores cuarto año-Tasa de estudiantes repitentes cuarto año\
+		)*Estudiantes de cuarto año
+	~	Estudiantes/Year
+	~		|
+
+"Tasa de transicion cohorte años 5-graduacion"=
+	(1-Tasa de estudiantes desertores quinto año-Tasa de estudiantes repitentes quinto año\
+		)*Estudiantes de quinto año
+	~	Estudiantes/Year
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,74,0
+10,1,Estudiantes de primer año,581,-810,62,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,382,-812,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(420,-812)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(490,-812)|
+11,5,0,455,-812,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Estudiantes nuevos primer año,455,-779,62,25,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Tasa de estudiantes que entran primer año,371,-935,53,53,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,Cupos primer año,528,-929,58,58,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,7,6,1,0,0,0,0,192,0,-1--1--1,,1|(375,-860)|
+1,10,8,6,1,0,0,0,0,192,0,-1--1--1,,1|(505,-843)|
+12,11,48,848,-811,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,14,1,100,0,0,22,0,192,0,-1--1--1,,1|(690,-811)|
+1,13,14,11,4,0,0,22,0,192,0,-1--1--1,,1|(794,-811)|
+11,14,0,744,-811,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,15,Desertores primer año,744,-780,49,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,16,Tasa de estudiantes desertores primer año,829,-639,53,53,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,Tasa de desertores por situaciones personales primer año,1058,-724,74,74,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Tasa de estudiantes que no reciben ayudas economicas primer año,1057,-541,50,50,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,Tasa de desertores por situacion economica primer año,1296,-607,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,20,Tasa de estudiantes que reciben ayudas economicas primer año,1300,-449,51,51,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,21,23,1,100,0,0,22,0,192,0,-1--1--1,,1|(589,-679)|
+1,22,23,35,4,0,0,22,0,192,0,-1--1--1,,1|(589,-411)|
+11,23,0,589,-565,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,24,"Tasa de transicion cohorte años 1-2",655,-565,58,32,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,25,Tasa de estudiantes repitentes primer año,442,-654,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,26,1,24,1,0,0,0,0,192,0,-1--1--1,,1|(680,-669)|
+1,27,25,24,1,0,0,0,0,192,0,-1--1--1,,1|(552,-560)|
+1,28,16,24,1,0,0,0,0,192,0,-1--1--1,,1|(760,-572)|
+1,29,16,15,1,0,0,0,0,192,0,-1--1--1,,1|(841,-735)|
+1,30,1,15,1,0,0,0,0,192,0,-1--1--1,,1|(681,-772)|
+1,31,17,16,1,0,0,0,0,192,0,-1--1--1,,1|(923,-723)|
+1,32,18,16,1,0,0,0,0,192,0,-1--1--1,,1|(896,-535)|
+1,33,19,18,1,0,0,0,0,192,0,-1--1--1,,1|(1133,-633)|
+1,34,20,18,1,0,0,0,0,192,0,-1--1--1,,1|(1148,-452)|
+10,35,Estudiantes de segundo año,591,-239,62,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,36,48,379,-235,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,37,39,36,100,0,0,22,0,192,0,-1--1--1,,1|(417,-235)|
+1,38,39,35,4,0,0,22,0,192,0,-1--1--1,,1|(493,-235)|
+11,39,0,452,-235,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,40,Estudiantes nuevos segundo año,452,-209,74,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,41,Tasa de estudiantes que entran segundo año,332,-354,53,53,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,42,Cupos segundo año,502,-361,58,58,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,43,41,40,1,0,0,0,0,192,0,-1--1--1,,1|(358,-279)|
+1,44,42,40,1,0,0,0,0,192,0,-1--1--1,,1|(490,-283)|
+12,45,48,845,-234,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,46,48,35,100,0,0,22,0,192,0,-1--1--1,,1|(694,-234)|
+1,47,48,45,4,0,0,22,0,192,0,-1--1--1,,1|(791,-234)|
+11,48,0,741,-234,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,49,Desertores segundo año,741,-208,47,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,50,Tasa de estudiantes desertores segundo año,826,-62,53,53,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,51,Tasa de desertores por situaciones personales segundo año,1055,-147,74,74,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,52,Tasa de estudiantes que no reciben ayudas economicas segundo año,1054,36,50,50,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,53,Tasa de desertores por situacion economica segundo año,1293,-30,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,54,Tasa de estudiantes que reciben ayudas economicas segundo año,1297,128,51,51,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,55,57,35,100,0,0,22,0,192,0,-1--1--1,,1|(586,-105)|
+1,56,57,69,4,0,0,22,0,192,0,-1--1--1,,1|(586,175)|
+11,57,0,586,12,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,58,"Tasa de transicion cohorte años 2-3",663,12,69,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,59,Tasa de estudiantes repitentes segundo año,439,-77,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,60,35,58,1,0,0,0,0,192,0,-1--1--1,,1|(693,-96)|
+1,61,59,58,1,0,0,0,0,192,0,-1--1--1,,1|(561,24)|
+1,62,50,58,1,0,0,0,0,192,0,-1--1--1,,1|(759,-2)|
+1,63,50,49,1,0,0,0,0,192,0,-1--1--1,,1|(834,-163)|
+1,64,35,49,1,0,0,0,0,192,0,-1--1--1,,1|(692,-190)|
+1,65,51,50,1,0,0,0,0,192,0,-1--1--1,,1|(920,-146)|
+1,66,52,50,1,0,0,0,0,192,0,-1--1--1,,1|(893,42)|
+1,67,53,52,1,0,0,0,0,192,0,-1--1--1,,1|(1130,-56)|
+1,68,54,52,1,0,0,0,0,192,0,-1--1--1,,1|(1145,125)|
+10,69,Estudiantes de tercer año,588,356,62,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,70,48,376,360,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,71,73,70,100,0,0,22,0,192,0,-1--1--1,,1|(414,360)|
+1,72,73,69,4,0,0,22,0,192,0,-1--1--1,,1|(490,360)|
+11,73,0,449,360,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,74,Estudiantes nuevos tercer año,449,386,71,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,75,Tasa de estudiantes que entran tercer año,329,241,53,53,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,76,Cupos tercer año,499,234,58,58,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,77,75,74,1,0,0,0,0,192,0,-1--1--1,,1|(355,316)|
+1,78,76,74,1,0,0,0,0,192,0,-1--1--1,,1|(487,312)|
+12,79,48,842,361,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,80,82,69,100,0,0,22,0,192,0,-1--1--1,,1|(691,361)|
+1,81,82,79,4,0,0,22,0,192,0,-1--1--1,,1|(788,361)|
+11,82,0,738,361,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,83,Desertores tercer año,738,387,55,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,84,Tasa de estudiantes desertores tercer año,823,533,53,53,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,85,Tasa de desertores por situaciones personales tercer año,1052,448,74,74,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,86,Tasa de estudiantes que no reciben ayudas economicas tercer año,1051,631,50,50,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,87,Tasa de desertores por situacion economica tercer año,1290,565,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,88,Tasa de estudiantes que reciben ayudas economicas tercer año,1294,723,51,51,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,89,91,69,100,0,0,22,0,192,0,-1--1--1,,1|(583,490)|
+1,90,91,103,4,0,0,22,0,192,0,-1--1--1,,1|(583,769)|
+11,91,0,583,607,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,92,"Tasa de transicion cohorte años 3-4",660,607,69,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,93,Tasa de estudiantes repitentes tercer año,436,518,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,94,69,92,1,0,0,0,0,192,0,-1--1--1,,1|(690,499)|
+1,95,93,92,1,0,0,0,0,192,0,-1--1--1,,1|(558,619)|
+1,96,84,92,1,0,0,0,0,192,0,-1--1--1,,1|(756,593)|
+1,97,84,83,1,0,0,0,0,192,0,-1--1--1,,1|(831,432)|
+1,98,69,83,1,0,0,0,0,192,0,-1--1--1,,1|(689,405)|
+1,99,85,84,1,0,0,0,0,192,0,-1--1--1,,1|(917,449)|
+1,100,86,84,1,0,0,0,0,192,0,-1--1--1,,1|(890,637)|
+1,101,87,86,1,0,0,0,0,192,0,-1--1--1,,1|(1127,539)|
+1,102,88,86,1,0,0,0,0,192,0,-1--1--1,,1|(1142,720)|
+10,103,Estudiantes de cuarto año,586,948,62,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,104,48,374,952,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,105,107,104,100,0,0,22,0,192,0,-1--1--1,,1|(412,952)|
+1,106,107,103,4,0,0,22,0,192,0,-1--1--1,,1|(488,952)|
+11,107,0,447,952,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,108,Estudiantes nuevos cuarto año,447,978,72,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,109,Tasa de estudiantes que entran cuarto año,327,833,53,53,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,110,Cupos cuarto año,497,826,58,58,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,111,109,108,1,0,0,0,0,192,0,-1--1--1,,1|(353,908)|
+1,112,110,108,1,0,0,0,0,192,0,-1--1--1,,1|(485,904)|
+12,113,48,840,953,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,114,116,103,100,0,0,22,0,192,0,-1--1--1,,1|(689,953)|
+1,115,116,113,4,0,0,22,0,192,0,-1--1--1,,1|(786,953)|
+11,116,0,736,953,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,117,Desertores cuarto año,736,979,44,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,118,Tasa de estudiantes desertores cuarto año,821,1125,53,53,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,119,Tasa de desertores por situaciones personales cuarto año,1050,1040,74,74,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,120,Tasa de estudiantes que no reciben ayudas economicas cuarto año,1049,1223,50,50,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,121,Tasa de desertores por situacion economica cuarto año,1288,1157,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,122,Tasa de estudiantes que reciben ayudas economicas cuarto año,1292,1315,51,51,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,123,125,103,100,0,0,22,0,192,0,-1--1--1,,1|(581,1082)|
+1,124,125,137,4,0,0,22,0,192,0,-1--1--1,,1|(581,1360)|
+11,125,0,581,1199,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,126,"Tasa de transicion cohorte años 4-5 0",658,1199,69,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,127,Tasa de estudiantes repitentes cuarto año,434,1110,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,128,103,126,1,0,0,0,0,192,0,-1--1--1,,1|(688,1091)|
+1,129,127,126,1,0,0,0,0,192,0,-1--1--1,,1|(556,1211)|
+1,130,118,126,1,0,0,0,0,192,0,-1--1--1,,1|(754,1185)|
+1,131,118,117,1,0,0,0,0,192,0,-1--1--1,,1|(829,1024)|
+1,132,103,117,1,0,0,0,0,192,0,-1--1--1,,1|(687,997)|
+1,133,119,118,1,0,0,0,0,192,0,-1--1--1,,1|(915,1041)|
+1,134,120,118,1,0,0,0,0,192,0,-1--1--1,,1|(888,1229)|
+1,135,121,120,1,0,0,0,0,192,0,-1--1--1,,1|(1125,1131)|
+1,136,122,120,1,0,0,0,0,192,0,-1--1--1,,1|(1140,1312)|
+10,137,Estudiantes de quinto año,586,1538,62,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,138,48,374,1542,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,139,141,138,100,0,0,22,0,192,0,-1--1--1,,1|(412,1542)|
+1,140,141,137,4,0,0,22,0,192,0,-1--1--1,,1|(488,1542)|
+11,141,0,447,1542,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,142,Estudiantes nuevos tercer año 0 0,447,1568,71,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,143,Tasa de estudiantes que entran quinto año,327,1423,53,53,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,144,Cupos quinto año,497,1416,58,58,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,145,143,142,1,0,0,0,0,192,0,-1--1--1,,1|(353,1498)|
+1,146,144,142,1,0,0,0,0,192,0,-1--1--1,,1|(485,1494)|
+12,147,48,840,1543,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,148,150,137,100,0,0,22,0,192,0,-1--1--1,,1|(689,1543)|
+1,149,150,147,4,0,0,22,0,192,0,-1--1--1,,1|(786,1543)|
+11,150,0,736,1543,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,151,Desertores quinto año,736,1569,51,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,152,Tasa de estudiantes desertores quinto año,821,1715,53,53,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,153,Tasa de desertores por situaciones personales quinto año,1050,1630,74,74,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,154,Tasa de estudiantes que no reciben ayudas economicas quinto año,1049,1813,50,50,2,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,155,Tasa de desertores por situacion economica quinto año,1288,1747,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,156,Tasa de estudiantes que reciben ayudas economicas quinto año,1292,1905,51,51,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,157,48,581,2079,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,158,160,137,100,0,0,22,0,192,0,-1--1--1,,1|(581,1672)|
+1,159,160,157,4,0,0,22,0,192,0,-1--1--1,,1|(581,1933)|
+11,160,0,581,1789,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,161,"Tasa de transicion cohorte años 5-graduacion",664,1789,75,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,162,Tasa de estudiantes repitentes quinto año,434,1700,57,57,11,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,163,137,161,1,0,0,0,0,192,0,-1--1--1,,1|(695,1675)|
+1,164,162,161,1,0,0,0,0,192,0,-1--1--1,,1|(565,1807)|
+1,165,152,161,1,0,0,0,0,192,0,-1--1--1,,1|(753,1768)|
+1,166,152,151,1,0,0,0,0,192,0,-1--1--1,,1|(829,1614)|
+1,167,137,151,1,0,0,0,0,192,0,-1--1--1,,1|(687,1587)|
+1,168,153,152,1,0,0,0,0,192,0,-1--1--1,,1|(915,1631)|
+1,169,154,152,1,0,0,0,0,192,0,-1--1--1,,1|(888,1819)|
+1,170,155,154,1,0,0,0,0,192,0,-1--1--1,,1|(1125,1721)|
+1,171,156,154,1,0,0,0,0,192,0,-1--1--1,,1|(1140,1902)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Cupos cuarto año
+9:current
+19:74,0
+24:0
+25:100
+26:100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
